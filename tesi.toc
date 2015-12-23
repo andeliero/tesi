@@ -6,32 +6,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}L'azienda}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}L'azienda}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Chi \IeC {\`e} l'azienda}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}L'idea}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Prodotti e servizi offerti}{1}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Organizzazione del testo}{1}{section.1.3}
+\contentsline {section}{\numberline {1.3}Supporto ai processi aziendali}{1}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Il progetto nella strategia aziendale}{3}{chapter.2}
+\contentsline {section}{\numberline {1.4}Rapporto azienda e innovazione}{1}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{3}{section.2.1}
+\contentsline {chapter}{\numberline {2}Visione Strategica}{3}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Il progetto nella strategia aziendale}{3}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Presentazione progetto}{3}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Il progetto}{3}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Aspettative}{3}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Vincoli}{3}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Vincoli temporali}{3}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Vincoli metodologici}{3}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Vincoli tecnologici}{3}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Il progetto di stage}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{5}{section.3.1}
+\contentsline {section}{\numberline {3.1}Organizzazione}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.1}Pianificazione}{5}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{5}{section.3.3}
+\contentsline {section}{\numberline {3.2}Analisi dei requisiti}{5}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pianificazione}{5}{section.3.4}
+\contentsline {subsection}{\numberline {3.2.1}Requisiti}{5}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Casi d'uso}{5}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Progettazione architetturale}{5}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Progettazione di dettaglio}{5}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Verifica e Validazione}{5}{section.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Valutazioni retrospettive}{7}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Casi d'uso}{7}{section.4.1}
+\contentsline {section}{\numberline {4.1}Bilancio risultati}{7}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{8}{section.4.2}
+\contentsline {section}{\numberline {4.2}Bilancio formativo}{7}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{11}{appendix.Alph1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{15}{appendix*.17}
+\contentsline {section}{\numberline {4.3}Valutazioni Personali}{7}{section.4.3}
