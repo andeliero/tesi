@@ -32,13 +32,41 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces UC0: Tres\relax }}{22}{figure.caption.28}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Suddivisione delle attivit\IeC {\`a}\relax }}{19}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces UC1: Tres\relax }}{23}{figure.caption.30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces UC0: Tres\relax }}{24}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Visione generale architettura \emph {client-server}. Immagine tratta da \href {http://contentdeliverance.com/2011/client-server-architecture/}{Content Deliverance}\relax }}{24}{figure.caption.31}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces UC1: Tres\relax }}{25}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Visione generale dell'architettura\relax }}{26}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Visione generale dell'architettura\relax }}{27}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagramma del \emph {package} \emph {controllers}\relax }}{28}{figure.caption.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagramma del \emph {package} \emph {models}\relax }}{28}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagramma del \emph {package} \emph {commons}\relax }}{29}{figure.caption.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagramma del \emph {package} \emph {storage}\relax }}{29}{figure.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagramma del \emph {package} \emph {algorithm}\relax }}{30}{figure.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagramma del \emph {package} \emph {algorithm}\relax }}{30}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Contesto di utilizzo del \emph {design pattern MVC}\relax }}{31}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Contesto di utilizzo del \emph {design pattern DAO}\relax }}{31}{figure.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Contesto di utilizzo del \emph {design pattern strategy}\relax }}{32}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Contesto di utilizzo del \emph {design pattern singleton}\relax }}{32}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagramma di sequenza: controllo stato.\relax }}{33}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagramma di sequenza: inserimento comportamento.\relax }}{34}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagramma di sequenza: raccomandazione.\relax }}{34}{figure.caption.57}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

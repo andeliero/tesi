@@ -2246,6 +2246,8 @@
     <bcf:citekey order="7">http://astah.net/</bcf:citekey>
     <bcf:citekey order="8">http://www.scala-lang.org/</bcf:citekey>
     <bcf:citekey order="9">http://orientdb.com/</bcf:citekey>
+    <bcf:citekey order="10">https://github.com/tinkerpop/blueprints</bcf:citekey>
+    <bcf:citekey order="11">http://tinkerpop.incubator.apache.org/</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
