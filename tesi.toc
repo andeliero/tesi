@@ -74,76 +74,76 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Requisiti}{20}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Casi d'uso}{23}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Casi d'uso}{22}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC0}{24}{section*.28}
+\contentsline {subsubsection}{UC0}{23}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC1}{25}{section*.30}
+\contentsline {subsubsection}{UC1}{24}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Progettazione architetturale}{26}{section.3.3}
+\contentsline {section}{\numberline {3.3}Progettazione architetturale}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Visione ad alto livello}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Visione ad alto livello}{25}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Architettura}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Architettura}{26}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{controllers}{28}{section*.34}
+\contentsline {subsubsection}{controllers}{27}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{models}{28}{section*.36}
+\contentsline {subsubsection}{models}{27}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Classi contenute}{28}{section*.38}
+\contentsline {paragraph}{Classi contenute}{27}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Package contenuti}{29}{section*.39}
+\contentsline {paragraph}{Package contenuti}{28}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Database}{30}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Database}{29}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Design pattern}{31}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Design pattern}{30}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{MVC}{31}{section*.47}
+\contentsline {subsubsection}{MVC}{30}{section*.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dao}{31}{section*.49}
+\contentsline {subsubsection}{Dao}{30}{section*.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strategy}{32}{section*.51}
+\contentsline {subsubsection}{Strategy}{31}{section*.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Singleton}{32}{section*.53}
+\contentsline {subsubsection}{Singleton}{31}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Progettazione di dettaglio}{33}{section.3.4}
+\contentsline {section}{\numberline {3.4}Progettazione di dettaglio}{32}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Controllo stato}{33}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Controllo stato}{32}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Inserimento behavior}{33}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}Inserimento behavior}{32}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Raccomandazione}{34}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Raccomandazione}{33}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Verifica e Validazione}{35}{section.3.5}
+\contentsline {section}{\numberline {3.5}Verifica e Validazione}{34}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strumenti}{35}{section*.58}
+\contentsline {subsubsection}{Strumenti}{34}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Metriche adottate}{35}{section*.59}
+\contentsline {subsubsection}{Metriche adottate}{34}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Resoconto risultati}{36}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Resoconto risultati}{35}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Metriche misurate}{36}{section*.60}
+\contentsline {subsubsection}{Metriche misurate}{35}{section*.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Test di unit\IeC {\`a}}{36}{section*.61}
+\contentsline {subsubsection}{Test di unit\IeC {\`a}}{35}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Test di integrazione}{37}{section*.62}
+\contentsline {subsubsection}{Test di integrazione}{36}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Test di sistema}{37}{section*.63}
+\contentsline {subsubsection}{Test di sistema}{36}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sommario funzionamento}{37}{section*.64}
+\contentsline {subsubsection}{Sommario funzionamento}{36}{section*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Valutazione Retrospettiva}{39}{chapter.4}
+\contentsline {chapter}{\numberline {4}Valutazione Retrospettiva}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Bilancio sui risultati}{39}{section.4.1}
+\contentsline {section}{\numberline {4.1}Bilancio sui risultati}{37}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Obiettivi conseguiti}{39}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Obiettivi conseguiti}{37}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Obiettivi personali}{40}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Obiettivi personali}{38}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Bilancio formativo}{40}{section.4.2}
+\contentsline {section}{\numberline {4.2}Bilancio formativo}{38}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Distanza tra formazione universitaria e lavoro}{40}{section.4.3}
+\contentsline {section}{\numberline {4.3}Distanza tra formazione universitaria e lavoro}{38}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{41}{appendix.Alph1}
+\contentsline {chapter}{\numberline {A}Appendice A}{39}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{43}{appendix*.66}
+\contentsline {chapter}{Bibliografia}{41}{appendix*.68}

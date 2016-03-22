@@ -47,7 +47,7 @@ La figura \hyperref[fig:gantt]{3.1} presenta il diagramma di \emph{gantt} utiliz
 %**************************************************************
 \section{Analisi dei requisiti} 
 \subsection{Requisiti}
-Per l'attività di analisi dei requisiti ho svolto molteplici incontri insieme al \emph{tutor} aziendale per delineare quali funzionalità dovesse offrire il sistema. Il \emph{tutor} mi ha fornito molti esempi ed illustrazioni per capire al meglio quali requisiti il sistema dovesse soddisfare. Una volta definito le funzionalità, ho trascritto i requisiti in un file testuale, in un formato organizzato tabellare. Visto le dimensioni ridotte del progetto ho prediletto il tracciamento dei requisiti con un file di testo anziché utilizzare un sistema automatizzato. Il file è stato poi sottoposto a versionamento all'interno del \emph{repository} per permettere operazioni di consultazione e modifica all'evolversi dei requisiti. La notazione scelta per suddividere i requisiti è la seguente: 
+Per l'attività di analisi dei requisiti ho svolto molteplici incontri insieme al \emph{tutor} aziendale per delineare quali funzionalità dovesse offrire il sistema. Il \emph{tutor} mi ha fornito molti esempi ed illustrazioni per capire al meglio quali requisiti il sistema dovesse soddisfare. Tuttavia questa attività è stata molto ostica perché sia il \emph{tutor} e sia il \emph{CEO} esprimevano richieste diverse e spesso molto discordanti. Visto che il proponente non aveva le idee molto chiare sul sistema da implementare, ho cercato di assumere un atteggiamento più propositivo per aiutarlo a comprendere i suoi bisogni e portare a termine l'analisi dei requisiti. Una volta definito le funzionalità, ho trascritto i requisiti in un file testuale, in un formato organizzato tabellare. Visto le dimensioni ridotte del progetto ho prediletto il tracciamento dei requisiti con un file di testo anziché utilizzare un sistema automatizzato. Il file è stato poi sottoposto a versionamento all'interno del \emph{repository} per permettere operazioni di consultazione e modifica all'evolversi dei requisiti. La notazione scelta per suddividere i requisiti è la seguente: 
 \begin{center}
 R[Importanza][Tipologia][Codice]
 \end{center}
@@ -65,37 +65,51 @@ R[Importanza][Tipologia][Codice]
 \end{itemize}
 \item Codice è un \emph{id} numerico univoco.
 \end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.72]{immagini/distribuzionereqi}
+\caption{Distribuzione requisiti in percentuale per tipologia}
+\label{fig:distr-req-tip}
+\end{figure}
+Durante l'analisi dei requisiti ho prima di trasporre i requisiti secondo la notazione precedentemente menzionata, ho rielaborato i requisiti in modo che non contenessero ambiguità verbali, se presenti ho corredato al documento di analisi un glossario dove specificare il termine ed evitare così interpretazioni errate del requisito. Inoltre per ogni requisito l'ho suddiviso in più requisiti fino a che ogni singolo requisito risultasse indivisibile, oppure i requisiti che risultavano ridondanti tra loro, li ho uniti perché ogni requisito risultasse indipendente. Infine ho verificato che ogni requisito fosse verificabile secondo una metrica in modo da certificarne il soddisfacimento. Al termine dell'analisi, i requisiti individuati sono 23 di cui, come raffigurato nell'immagine \href{fig:distr-req-tip}{3.2}, 15 di natura funzionale, 1 prestazionale e i restanti 7 requisiti di vincolo. I requisiti sono stati classificati per priorità, determinando così 20 requisiti obbligatori e 3 desiderabili, questi ultimi riguardano nella maggior parte gli obiettivi di massima fissati dal piano di lavoro. %I requisiti obbligatori sono stati ordinati secondo i criteri di stabilità (ovvero il numero di modifiche attese) e il grado di necessità (essenziale, condizionale, opzionale) 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.72]{immagini/distribuzionereqt}
+\caption{Distribuzione requisiti in percentuale per importanza}
+\label{fig:distr-req-imp}
+\end{figure}
+
+%Tabella requisiti:
+%\def\arraystretch{1.8}
+%\begin{longtable}{|l|p{7cm}|}
+%\hline
+%\textbf{Codice} &	\textbf{Descrizione}	\\\hline
+%ROBBF1	&	Il sistema deve permettere l'inserimento di un nuovo comportamento	\\\hline
+%ROBBF2	&	Il sistema deve restituire un messaggio di segnalazione in caso di errore durante il salvataggio \\\hline
+%ROBBF3	&	I dati ricevuti devono essere in formato Json \\\hline
+%ROBBF4	&	I dati inviati devono essere in formato Json \\\hline
+%ROBBF5	&	Il sistema deve restituire un messaggio di errore in caso di Json non valido \\\hline
+%ROBBF6	&	Devono essere inseriti almeno 100 comportamenti per produrre la raccomandazione \\\hline
+%ROBBF7	&	Il sistema deve restituire un messaggio di conferma quando l'algoritmo è pronto a produrre una raccomandazione	\\\hline
+%ROBBF8	&	Il sistema deve permettere il calcolo dell'entropia del \emph{dataset} \\\hline
+%ROBBF9	&	Il sistema deve permettere il calcolo del guadagno di informazione del \emph{dataset}	\\\hline
+%ROBBV10	&	Il sistema deve permettere la costruzione ricorsivamente dell'albero di decisione	\\\hline
+%ROBBV11	&	Il sistema deve permettere la creazione di tanti nodi quanti sono i possibili valori dell'attributo scelto \\\hline
+%ROBBV12	&	L'algoritmo di costruzione dell'albero deve fermarsi quando tutte le istanze di un nodo appartengono alla stessa classe \\\hline
+%ROBBF13	&	Il sistema deve permettere di ricevere una richiesta per classificare un comportamento vuoto \\\hline
+%ROBBF14	&	Il sistema, per la richiesta con un comportamento vuoto, deve restituire tutte le raccomandazioni con le percentuale calcolate in base al \emph{dataset} \\\hline
+%ROBBF15	&	Il sistema deve permettere di classificare un comportamento dell'utente \\\hline
+%ROBBF16	&	Il sistema deve fornire una raccomandazione o più in base alla classificazione del comportamento \\\hline
+%ROBBF17	&	Il sistema deve fornire insieme alla raccomandazione la percentuale di adeguatezza	\\\hline
+%ROBBV18	&	Il sistema deve permettere la modifica dell'albero di decisione ogni 24 ore	\\\hline
+%ROBBV19	&	Devono essere rispettate le metriche sulla stesura del codice riportate nella sezione 3.5 \\\hline
+%RDESF20	&	Devono essere implementati nuovi algoritmi basati sulla teoria de giochi	\\\hline
+%RDESV21	&	Devono essere implementati nuovi algoritmi di \emph{clustering}	\\\hline
+%RDESV22	&	Deve essere sviluppato il pannello di amministrazione	\\\hline
+%ROBBP23	&	Il \emph{database} deve essere in grado di memorizzare almeno 100.000 record al secondo	\\\hline
+%\caption{Tabella dei requisiti}
+%\end{longtable}
 \newpage
-Tabella requisiti:
-\def\arraystretch{1.8}
-\begin{longtable}{|l|p{7cm}|}
-\hline
-\textbf{Codice} &	\textbf{Descrizione}	\\\hline
-ROBBF1	&	Il sistema deve permettere l'inserimento di un nuovo comportamento	\\\hline
-ROBBF2	&	Il sistema deve restituire un messaggio di segnalazione in caso di errore durante il salvataggio \\\hline
-ROBBF3	&	I dati ricevuti devono essere in formato Json \\\hline
-ROBBF4	&	I dati inviati devono essere in formato Json \\\hline
-ROBBF5	&	Il sistema deve restituire un messaggio di errore in caso di Json non valido \\\hline
-ROBBF6	&	Devono essere inseriti almeno 100 comportamenti per produrre la raccomandazione \\\hline
-ROBBF7	&	Il sistema deve restituire un messaggio di conferma quando l'algoritmo è pronto a produrre una raccomandazione	\\\hline
-ROBBF8	&	Il sistema deve permettere il calcolo dell'entropia del \emph{dataset} \\\hline
-ROBBF9	&	Il sistema deve permettere il calcolo del guadagno di informazione del \emph{dataset}	\\\hline
-ROBBV10	&	Il sistema deve permettere la costruzione ricorsivamente dell'albero di decisione	\\\hline
-ROBBV11	&	Il sistema deve permettere la creazione di tanti nodi quanti sono i possibili valori dell'attributo scelto \\\hline
-ROBBV12	&	L'algoritmo di costruzione dell'albero deve fermarsi quando tutte le istanze di un nodo appartengono alla stessa classe \\\hline
-ROBBF13	&	Il sistema deve permettere di ricevere una richiesta per classificare un comportamento vuoto \\\hline
-ROBBF14	&	Il sistema, per la richiesta con un comportamento vuoto, deve restituire tutte le raccomandazioni con le percentuale calcolate in base al \emph{dataset} \\\hline
-ROBBF15	&	Il sistema deve permettere di classificare un comportamento dell'utente \\\hline
-ROBBF16	&	Il sistema deve fornire una raccomandazione o più in base alla classificazione del comportamento \\\hline
-ROBBF17	&	Il sistema deve fornire insieme alla raccomandazione la percentuale di adeguatezza	\\\hline
-ROBBV18	&	Il sistema deve permettere la modifica dell'albero di decisione ogni 24 ore	\\\hline
-ROBBV19	&	Devono essere rispettate le metriche sulla stesura del codice riportate nella sezione 3.5 \\\hline
-RDESF20	&	Devono essere implementati nuovi algoritmi basati sulla teoria de giochi	\\\hline
-RDESV21	&	Devono essere implementati nuovi algoritmi di \emph{clustering}	\\\hline
-RDESV22	&	Deve essere sviluppato il pannello di amministrazione	\\\hline
-ROBBP23	&	Il \emph{database} deve essere in grado di memorizzare almeno 100.000 record al secondo	\\\hline
-\caption{Tabella dei requisiti}
-\end{longtable}
 \subsection{Casi d'uso}
 Durante l'analisi dei requisiti ho realizzato dei diagrammi \emph{UML}, utilizzando il \emph{software} Astah. Tres è concepito per operare con Bdrim, una piattaforma di raccolta dati sviluppato in collaborazione con Allos. Quindi l'unico attore coinvolto nell'utilizzo di Tres è Bdrim che espone un caso d'uso principale. In questa sezione riporto i casi d'uso principali che descrivono maggiormente il sistema nel suo complesso. Per ogni caso d'uso ho specificato: 
 \begin{itemize}
@@ -176,8 +190,8 @@ Per la realizzazione di Tres, ho seguito un \emph{design} architetturale \emph{M
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.35]{immagini/architetturamvc}
-\caption{Visione generale dell'architettura}
-\label{fig:arch-gen}
+\caption{Diagramma del \emph{package} \emph{tres}}
+\label{fig:pack-tres}
 \end{figure}
 \newpage
 \subsubsection{controllers}%procedere da qui
@@ -232,8 +246,8 @@ Il vertice principale è \emph{Behavior} che rappresenta il comportamento di un 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.45]{immagini/databaseschema}
-\caption{Diagramma del \emph{package} \emph{algorithm}}
-\label{fig:pack-algorithm}
+\caption{Modello a grafo del database}
+\label{fig:database-schema}
 \end{figure}
 \subsection{Design pattern}
 Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di Tres.
@@ -246,7 +260,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} viene utilizzato per separare i compiti delle diverse componenti \emph{software} dell'applicazione, separando \emph{business logic}, \emph{application logic} e viste, rappresentate rispettivamente da \emph{models}, \emph{controller} e \emph{views};
-\item \textbf{Contesto di utilizzo:} questo \emph{pattern} viene implementato nativamente dal \emph{framework} Play. In particolare implementa una tipologia di \emph{MVC pull-model} che permette un salto tecnologico tra la \emph{view} e il \emph{controller}.
+\item \textbf{Contesto di utilizzo:} questo \emph{pattern} viene implementato nativamente dal \emph{framework} Play. In particolare implementa una tipologia di \emph{MVC pull-model} che permette un salto tecnologico tra la \emph{view} e il \emph{controller}. Questo pattern architetturale è importantissimo in azienda perché permette di lavorare parallelamente sulle componenti. In genere i programmatori lavorano sulle componenti del controller e del model, invece i designer lavorano sulle componenti di view. (RIVEDERE?)
 \end{itemize}
 \subsubsection{Dao}
 \begin{figure}[h]
@@ -257,7 +271,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} è utilizzato per disaccoppiare la logica di \emph{business} dalla logica di persistenza. Per rendere così le componenti indipendenti dal sistema di \emph{database};
-\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package storage} per interagire col \emph{database} OrientDb.
+\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package storage} per interagire col \emph{database} OrientDb. L'azienda utilizza diverse tecnologie di persistenza dei dati, e quindi per essere facilmente interscambiabile in scenari futuri è importante l'utilizzo di questo pattern che permette una facile transizione da una tecnologia all'altra.
 \end{itemize}
 \subsubsection{Strategy}
 \begin{figure}[h]
@@ -268,7 +282,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} il \emph{design pattern strategy} definisce una famiglia di algoritmi, incapsulati e resi intercambiabili. \emph{Strategy} permette agli algoritmi di variare indipendentemente dai client che ne fanno uso;
-\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo che viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}.
+\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo che viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}. Ho ritenuto importante applicare questo pattern nell'ottica di rendere l'algoritmo facilmente interscambiabile con altri algoritmi di raccomandazione, come ad esempio degli algoritmi basati sulla teoria dei giochi.
 \end{itemize}
 \subsubsection{Singleton}
 \begin{figure}[h]
@@ -279,7 +293,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} il \emph{design pattern singleton} assicura che una certa classe abbia una sola istanza e fornisce un punto d'acceso globale a tale istanza;
-\item \textbf{Contesto di utilizzo:} viene utilizzato nelle componenti del \emph{package controller} e viene implementato nativamente dal linguaggio Scala dichiarando la classe come \emph{object}.
+\item \textbf{Contesto di utilizzo:} viene utilizzato nelle componenti del \emph{package controller} e viene implementato nativamente dal linguaggio Scala dichiarando la classe come \emph{object}. Il suo utilizzo è importante perché previene da inutili sprechi di memoria che si avrebbero in un contesto \emph{multi-thread} come questo applicativo \emph{web}.
 \end{itemize}
 %**************************************************************
 
