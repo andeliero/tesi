@@ -2248,6 +2248,8 @@
     <bcf:citekey order="9">http://orientdb.com/</bcf:citekey>
     <bcf:citekey order="10">https://github.com/tinkerpop/blueprints</bcf:citekey>
     <bcf:citekey order="11">http://tinkerpop.incubator.apache.org/</bcf:citekey>
+    <bcf:citekey order="12">https://www.coursera.org/course/progfun</bcf:citekey>
+    <bcf:citekey order="13">http://lampwww.epfl.ch/~odersky/</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

@@ -241,14 +241,37 @@ Il \emph{package} \emph{algorithm} contiene le componenti \emph{software} che re
 \label{fig:pack-algorithm}
 \end{figure}
 \subsection{Database}
-OrientDb è un \emph{database} a grafo, quindi esistono due entità, i vertici e gli spigoli. Entrambi possono contenere degli attributi al loro interno, ma nel caso degli spigoli è fortemente sconsigliato per motivi prestazionali\footnote{http://orientdb.com/docs/last/Performance-Tuning-Graph.html}. Per la persistenza dei dati ho scelto una definizione dei dati di tipo \emph{schema-full} per evitare un controllo dei dati a \emph{run-time} nelle componenti del \emph{package} \emph{storage}.\\
-Il vertice principale è \emph{Behavior} che rappresenta il comportamento di un utente. Da un \emph{behavior} si dirama l'associazione verso un \emph{Item} attraverso lo spigolo \emph{Result} ed esprime che il comportamento dell'utente ha come risultato un \emph{Item}. Un \emph{Item} è descritto con una serie di \emph{Tag}, quindi un vertice di tipo \emph{Item} è associato a molteplici \emph{Tag} tramite uno spigolo \emph{HoldsTag}. Un \emph{Behavior} descrive una serie di interazioni su dei \emph{WidgetTag}, quindi un vertice di tipo \emph{Behavior} è associato a molteplici \emph{WidgetTag} tramite uno spigolo \emph{Interaction}. \emph{Interaction} contiene la tipologia svolta su di un determinato \emph{WidgetTag}.
+Rispetto alle esperienze precedenti come nel mio corso di laurea dove ho utilizzato tecnologie più tradizionali come i database relazionali, questa occasione mi ha permesso di utilizzare un database NoSQL come OrientDb. Questo database supporta diversi modelli di persistenza, e per questo progetto ho utilizzato il modello a grafo che fa riferimento direttamente alla \emph{teoria dei grafi}. In particolare la variante di grafo che OrientDb utilizza è \emph{property graph} quindi per la modellazione ho tenuto presente i seguenti concetti:
+\begin{itemize}
+\item I vertici sono delle entità mentre gli spigoli rappresentano le relazioni;
+\item Una entità contiene un chiave identificativa e delle proprietà; 
+\item Una relazione è espressa tramite una label e collega due entità, la direzione della relazione è importante per la semantica della relazione, una relazione inoltre può contenere delle proprietà.
+\end{itemize}
+In OrientDb è possibile aggiungere attributi agli spigoli ma è fortemente sconsigliato per motivi prestazionali\footnote{http://orientdb.com/docs/last/Performance-Tuning-Graph.html}. Per la persistenza dei dati ho scelto una definizione dei dati di tipo \emph{schema-full} per evitare un controllo dei dati a \emph{run-time} nelle componenti del \emph{package} \emph{storage}.
+\newpage
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.45]{immagini/databaseschema}
+\includegraphics[scale=0.50]{immagini/databaseschema}
 \caption{Modello a grafo del database}
 \label{fig:database-schema}
 \end{figure}
+La fase di modellazione a grafo è simile alla tecnica di modellazione relazionale, si cerca di individuare le entità del dominio e le modalità con cui si relazionano. Successivamente invece di trasformare la rappresentazione in tabelle ho arricchito lo schema andando ad individuare gli attributi interni delle entità e delle relazioni.
+Le entità principali individuate sono:
+\begin{itemize}
+\item \textbf{Behavior:} questa entità rappresenta il comportamento di un utente all'interno di un sito web.
+\item \textbf{Item:} questa entità rappresenta in genere un oggetto in vendita nel sito web.
+\item \textbf{WidgetTag:} questa entità rappresenta un elemento generico all'interno di un sito web, serve per individuare l'oggetto su cui l'utente svolge una azione. %widget tag deriva da tag perchè permesso da orientDb
+\item \textbf{Tag:} questa entità è una etichetta generica che serve a descrivere un \emph{Item}.
+\end{itemize}
+Le relazioni individuate sono:
+\begin{itemize}
+\item \textbf{Interaction:} Questa relazione parte dalla entità Behavior e arriva a WidgetTag. Esprime principalmente che un Behavior ha interagito sul WidgetTag collegato con una azione specifica;
+\item \textbf{Result:} Questa relazione parte da entità Behavior e arriva a Item. Esprime il risultato di un Behavior;
+\item \textbf{HoldsTag:} Questa relazione parte da Item e arriva a Tag. Esprime i Tag che descrivono l'entità Item.
+\end{itemize}
+%Da un \emph{behavior} si dirama l'associazione verso un \emph{Item} attraverso lo spigolo \emph{Result} ed esprime che il comportamento dell'utente ha come risultato un \emph{Item}. Un \emph{Item} è descritto con una serie di \emph{Tag}, quindi un vertice di tipo \emph{Item} è associato a molteplici \emph{Tag} tramite uno spigolo \emph{HoldsTag}. Un \emph{Behavior} descrive una serie di interazioni su dei \emph{WidgetTag}, quindi un vertice di tipo \emph{Behavior} è associato a molteplici \emph{WidgetTag} tramite uno spigolo \emph{Interaction}. \emph{Interaction} contiene la tipologia svolta su di un determinato \emph{WidgetTag}.
+
+\newpage
 \subsection{Design pattern}
 Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di Tres.
 \subsubsection{MVC}
@@ -284,6 +307,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \item\textbf{Scopo dell'utilizzo:} il \emph{design pattern strategy} definisce una famiglia di algoritmi, incapsulati e resi intercambiabili. \emph{Strategy} permette agli algoritmi di variare indipendentemente dai client che ne fanno uso;
 \item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo che viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}. Ho ritenuto importante applicare questo pattern nell'ottica di rendere l'algoritmo facilmente interscambiabile con altri algoritmi di raccomandazione, come ad esempio degli algoritmi basati sulla teoria dei giochi.
 \end{itemize}
+\newpage
 \subsubsection{Singleton}
 \begin{figure}[h]
 \centering
@@ -386,35 +410,40 @@ Qui di seguito sono riportate le metriche software misurate:
 \item \textbf{Copertura commenti:} il valore di copertura è pari al 100\%;
 \item \textbf{Copertura dei test:} il valore di copertura dei \emph{test} è del 73\%.
 \end{itemize}
-\subsubsection{Test di unità}
-Qui di seguito sono riportati tutti i \emph{test} di unità eseguiti e il loro relativo esito:
-\def\arraystretch{1.8}
-\begin{longtable}{|l|p{7cm}|l|}
-\hline
-\textbf{Test} &	\textbf{Descrizione}	&	\textbf{Stato}	\\\hline
-TU1	&	Viene verificato che il sistema salvi correttamente un comportamento all'interno del \emph{database}	&	Esito positivo	\\\hline
-TU2	&	Viene verificato il corretto caricamento di una lista di \emph{widgetTag} distinti	&	Esito positivo	\\\hline
-TU3	&	Viene verificato il corretto caricamento di una lista di \emph{item} distinti	&	Esito positivo	\\\hline
-TU4	&	Viene verificato il corretto caricamento di una lista di \emph{behavior} con una \emph{interaction} specifica	&	Esito positivo	\\\hline
-TU5	&	Viene verificato il corretto caricamento di una lista di \emph{behavior} con \emph{tag} e \emph{action} specifici	&	Esito positivo	\\\hline
-TU6	&	Viene verificato il corretto caricamento di una lista di \emph{action} distinti	&	Esito positivo	\\\hline
-TU7	&	Viene verificato il corretto calcolo dell'entropia	&	Esito positivo	\\\hline
-TU8	&	Viene verificato il corretto calcolo del guadagno di informazione	&	Esito positivo	\\\hline
-TU9	&	Viene verificato che venga creata la raccomandazione corretta da fornire	&	Esito positivo	\\\hline
-TU10	&	Viene verificato il corretto calcolo delle probabilità	&	Esito positivo	\\\hline
-\caption{Tabella dei \emph{test} di unità}
-\end{longtable}
-\subsubsection{Test di integrazione}
-Qui di seguito sono riportati tutti i \emph{test} di integrazione eseguiti e il loro relativo esito:
-\def\arraystretch{1.8}
-\begin{longtable}{|l|p{7cm}|l|l|}
-\hline
-\textbf{Test} &	\textbf{Descrizione}	&	\textbf{Componente}	&	\textbf{Stato}	\\\hline
-TI1	&	Viene verificato che il sistema crei correttamente un albero di decisione	&	algorithm	&	Esito positivo	\\\hline
-TI2	&	Viene verificato che il sistema aggiorni l'albero di decisione ogni 24 ore	&	algorithm	&	Esito positivo	\\\hline
-TI3	&	Viene verificata la corretta creazione del \emph{training set}		&	algorithm	&	Esito positivo	\\\hline
-\caption{Tabella dei \emph{test} di integrazione}
-\end{longtable}
+\subsubsection{Test di unità e di integrazione}
+I test di unità vengono svolti incrementalmente durante la codifica di ogni componente, i primi test che ho effettuato riguardano principalmente le componenti base del models e quelle responsabili delle iterazioni con il database. Successivamente sono passato al testing per la parte di algoritmica presente nel package algorithm. Per i test di unità ho evitato di utilizzare mock e stub per le componenti base presenti in commons in quanto ritenevo quelle componenti molto semplici e che non avrebbero introdotto errori o comportamenti non attesi. Man mano ho integrato le componenti con queste modalità per le parti di algoritmica e di integrazione col database ho seguito un approccio bottom-up. Ho focalizzato i test di integrazione di integrazione nella parte di algoritmica perché l'incertezza del comportamento di quelle componenti era altissima.
+%Mentre per il testing di integrazione delle componenti dei controller ho seguito un approccio top-dow, mi sono servito di alcuni mock che mi hanno permesso di simulare le componenti da cui erano dipendenti.
+Al netto dell'attività di testing i test di unità eseguiti ammontano ad un totale di 10 di cui 10 hanno esito positivo, mentre per quanto riguarda l'integrazione delle componenti sono stati eseguiti un totale di 3 test di integrazione di cui 3 hanno avuto esito positivo.
+
+%\subsubsection{Test di unità}
+%Qui di seguito sono riportati tutti i \emph{test} di unità eseguiti e il loro relativo esito:
+%\def\arraystretch{1.8}
+%\begin{longtable}{|l|p{7cm}|l|}
+%\hline
+%\textbf{Test} &	\textbf{Descrizione}	&	\textbf{Stato}	\\\hline
+%TU1	&	Viene verificato che il sistema salvi correttamente un comportamento all'interno del \emph{database}	&	Esito positivo	\\\hline
+%TU2	&	Viene verificato il corretto caricamento di una lista di \emph{widgetTag} distinti	&	Esito positivo	\\\hline
+%TU3	&	Viene verificato il corretto caricamento di una lista di \emph{item} distinti	&	Esito positivo	\\\hline
+%TU4	&	Viene verificato il corretto caricamento di una lista di \emph{behavior} con una \emph{interaction} specifica	&	Esito positivo	\\\hline
+%TU5	&	Viene verificato il corretto caricamento di una lista di \emph{behavior} con \emph{tag} e \emph{action} specifici	&	Esito positivo	\\\hline
+%TU6	&	Viene verificato il corretto caricamento di una lista di \emph{action} distinti	&	Esito positivo	\\\hline
+%TU7	&	Viene verificato il corretto calcolo dell'entropia	&	Esito positivo	\\\hline
+%TU8	&	Viene verificato il corretto calcolo del guadagno di informazione	&	Esito positivo	\\\hline
+%TU9	&	Viene verificato che venga creata la raccomandazione corretta da fornire	&	Esito positivo	\\\hline
+%TU10	&	Viene verificato il corretto calcolo delle probabilità	&	Esito positivo	\\\hline
+%\caption{Tabella dei \emph{test} di unità}
+%\end{longtable}
+%\subsubsection{Test di integrazione}
+%Qui di seguito sono riportati tutti i \emph{test} di integrazione eseguiti e il loro relativo esito:
+%\def\arraystretch{1.8}
+%\begin{longtable}{|l|p{7cm}|l|l|}
+%\hline
+%\textbf{Test} &	\textbf{Descrizione}	&	\textbf{Componente}	&	\textbf{Stato}	\\\hline
+%TI1	&	Viene verificato che il sistema crei correttamente un albero di decisione	&	algorithm	&	Esito positivo	\\\hline
+%TI2	&	Viene verificato che il sistema aggiorni l'albero di decisione ogni 24 ore	&	algorithm	&	Esito positivo	\\\hline
+%TI3	&	Viene verificata la corretta creazione del \emph{training set}		&	algorithm	&	Esito positivo	\\\hline
+%\caption{Tabella dei \emph{test} di integrazione}
+%\end{longtable}
 \subsubsection{Test di sistema}
 Ho effettuato alcuni \emph{test} di sistema inerenti alle funzionalità di inserimento dati, calcolo di una raccomandazione e infine il calcolo probabilità.
 \begin{itemize}
@@ -422,6 +451,129 @@ Ho effettuato alcuni \emph{test} di sistema inerenti alle funzionalità di inser
 \item \textbf{Calcolo raccomandazioni:} viene verificato il calcolo della raccomandazione da fornire;
 \item \textbf{Calcolo probabilità:} viene verificato il calcolo delle probabilità associate ai vari \emph{item}.
 \end{itemize}
-\subsubsection{Sommario funzionamento}
-TODO
+\section{Sommario funzionamento}
+In fase di startup il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni. \\
+Un modo per verificare lo stato operativo del modulo è attraverso una chiama a:\\
+\begin{center}
+GET    /tres/ready
+\end{center}
+
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+  "ready":false
+}
+\end{lstlisting}
+
+Viene indicato con un booleano l'operatività del modulo. L'operatività dipende prima di tutto se è stato generato albero. La sua generazione è programmata ogni 24 ore e necessita di almeno 100 behavior per essere eseguita.\\
+
+
+
+Per la procedura di inserimento dei comportamenti si usa la chiamata:
+\begin{center}
+POST    /tres/behavior
+\end{center}
+
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+  "item":{
+    "tags":[
+      {
+        "name":"tag:uno"
+      },
+      {
+        "name":"tag:due"
+      }
+    ]
+  },
+  "interactions":[
+    {
+      "widgetTag":{
+        "name":"District"
+      },
+      "action":"Suburban"
+    },
+    {
+      "widgetTag":{
+        "name":"HouseType"
+      },
+      "action":"Detached"
+    },
+    {
+      "widgetTag":{
+        "name":"Income"
+      },
+      "action":"High"
+    },
+    {
+      "widgetTag":{
+        "name":"PreviousCustomer"
+      },
+      "action":"No"
+    }
+  ]
+}
+\end{lstlisting}
+Un behavior non può contenere più interazioni con lo stesso Widget Tag e un Item deve contenere almeno un Tag.\\
+Una volta generato l'albero è possibile richiedere la raccomandazione.\\
+La prima chiamata da effettuare è:
+
+\begin{center}
+POST    /tres/answer
+\end{center}
+
+e nel body dev'essere inserito un array di interazioni(anche vuoto all'inizio)
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+  "interactions":[
+    {
+      "widgetTag":{
+        "name":"District"
+      },
+      "action":"Urban"
+    },
+    {
+      "widgetTag":{
+        "name":"HouseType"
+      },
+      "action":"Semi-Detached"
+    }  
+  ]
+}
+\end{lstlisting}
+Questa chiamata fornisce in output il prossimo Widget Tag da utilizzare per interrogare l'utente.
+Output:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+  name: "Income"
+}
+\end{lstlisting}
+Se la risposta è null la classificazione del comportamento è terminata ed è possibile procedere con la raccomandazione( nb: è possibile richiedere la raccomandazione in ogni momento).\\
+La chiamate da effettuare è:
+
+\begin{center}
+POST    /tres/recommendation
+\end{center}
+
+nel body va inserito lo stesso input di interazioni della chiamata precedente e in output avremo gli item della raccomandazione insieme alla percentuale.
+
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+  "items":[
+    {
+      "item":{
+        "tags":[
+          {
+            "name":"tag:uno"
+          },
+          {
+            "name":"tag:due"
+          }
+        ]
+      },
+      "percentage":100
+    }
+  ]
+}
+\end{lstlisting}
+
 %**************************************************************
