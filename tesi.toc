@@ -118,7 +118,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Strumenti}{36}{section*.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Metriche adottate}{36}{section*.61}
+\contentsline {subsubsection}{Metriche adottate}{37}{section*.61}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.1}Resoconto risultati}{37}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
@@ -126,30 +126,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Test di unit\IeC {\`a} e di integrazione}{37}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Test di sistema}{37}{section*.64}
+\contentsline {subsubsection}{Test di sistema}{38}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Sommario funzionamento}{38}{section.3.6}
+\contentsline {section}{\numberline {3.6}Sommario funzionamento}{39}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Valutazione Retrospettiva}{41}{chapter.4}
+\contentsline {chapter}{\numberline {4}Valutazione Retrospettiva}{43}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Bilancio sui risultati}{41}{section.4.1}
+\contentsline {section}{\numberline {4.1}Bilancio sui risultati}{43}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Obiettivi conseguiti}{41}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Obiettivi conseguiti}{43}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Obiettivi personali}{42}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Obiettivi personali}{44}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Bilancio formativo}{42}{section.4.2}
+\contentsline {section}{\numberline {4.2}Bilancio formativo}{44}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Scala}{42}{section*.67}
+\contentsline {subsubsection}{Scala}{44}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Programmazione funzionale}{43}{section*.68}
+\contentsline {subsubsection}{Programmazione funzionale}{45}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{OrientDb}{43}{section*.69}
+\contentsline {subsubsection}{OrientDb}{45}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Play Framework}{43}{section*.70}
+\contentsline {subsubsection}{Play Framework}{45}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Distanza tra formazione universitaria e lavoro}{43}{section.4.3}
+\contentsline {section}{\numberline {4.3}Distanza tra formazione universitaria e lavoro}{45}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{45}{appendix.Alph1}
+\contentsline {chapter}{\numberline {A}Appendice A}{47}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{47}{appendix*.71}
+\contentsline {chapter}{Bibliografia}{49}{appendix*.71}

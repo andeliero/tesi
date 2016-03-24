@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  24 MAR 2016 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  25 MAR 2016 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1545,14 +1545,14 @@ Overfull \hbox (43.99655pt too wide) in paragraph at lines 20--21
 File: immagini/distribuzionereqi.png Graphic file (type png)
 
 <use immagini/distribuzionereqi.png>
-Package pdftex.def Info: immagini/distribuzionereqi.png used on input line 70.
+Package pdftex.def Info: immagini/distribuzionereqi.png used on input line 71.
 (pdftex.def)             Requested size: 327.92488pt x 184.28835pt.
 
 <immagini/distribuzionereqt.png, id=389, 455.45157pt x 255.95625pt>
 File: immagini/distribuzionereqt.png Graphic file (type png)
 
 <use immagini/distribuzionereqt.png>
-Package pdftex.def Info: immagini/distribuzionereqt.png used on input line 77.
+Package pdftex.def Info: immagini/distribuzionereqt.png used on input line 78.
 (pdftex.def)             Requested size: 327.92488pt x 184.28835pt.
 
 
@@ -1563,13 +1563,13 @@ ereqt.png (PNG copy)>] <immagini/UC0a.png, id=398, 662.475pt x 521.69907pt>
 File: immagini/UC0a.png Graphic file (type png)
 
 <use immagini/UC0a.png>
-Package pdftex.def Info: immagini/UC0a.png used on input line 126.
+Package pdftex.def Info: immagini/UC0a.png used on input line 127.
 (pdftex.def)             Requested size: 278.23761pt x 219.1121pt.
  [23 <./immagini/UC0a.png>]
 <immagini/UC1a.png, id=406, 708.39656pt x 521.69907pt>
 File: immagini/UC1a.png Graphic file (type png)
  <use immagini/UC1a.png>
-Package pdftex.def Info: immagini/UC1a.png used on input line 141.
+Package pdftex.def Info: immagini/UC1a.png used on input line 142.
 (pdftex.def)             Requested size: 297.52452pt x 219.1121pt.
 
 [24 <./immagini/UC1a.png>]
@@ -1578,67 +1578,67 @@ File: immagini/architetturagenerale.png Graphic file (type png)
 
 <use immagini/architetturagenerale.png>
 Package pdftex.def Info: immagini/architetturagenerale.png used on input line 1
-82.
+83.
 (pdftex.def)             Requested size: 308.65236pt x 290.58492pt.
  [25 <./immagini/architetturagenerale.png>] <immagini/architetturamvc.png, id=4
 19, 1019.81pt x 809.0225pt>
 File: immagini/architetturamvc.png Graphic file (type png)
 
 <use immagini/architetturamvc.png>
-Package pdftex.def Info: immagini/architetturamvc.png used on input line 192.
+Package pdftex.def Info: immagini/architetturamvc.png used on input line 193.
 (pdftex.def)             Requested size: 356.93884pt x 283.16212pt.
  [26 <./immagini/architetturamvc.png>]
 <immagini/controllers.png, id=425, 796.9775pt x 329.23pt>
 File: immagini/controllers.png Graphic file (type png)
 
 <use immagini/controllers.png>
-Package pdftex.def Info: immagini/controllers.png used on input line 201.
+Package pdftex.def Info: immagini/controllers.png used on input line 202.
 (pdftex.def)             Requested size: 278.94629pt x 115.23222pt.
 
 <immagini/models.png, id=426, 1106.1325pt x 578.16pt>
 File: immagini/models.png Graphic file (type png)
 
 <use immagini/models.png>
-Package pdftex.def Info: immagini/models.png used on input line 209.
+Package pdftex.def Info: immagini/models.png used on input line 210.
 (pdftex.def)             Requested size: 331.84232pt x 173.44933pt.
  [27 <./immagini/controllers.png> <./immagini/models.png>] <immagini/commons.pn
 g, id=436, 627.34375pt x 574.145pt>
 File: immagini/commons.png Graphic file (type png)
 
 <use immagini/commons.png>
-Package pdftex.def Info: immagini/commons.png used on input line 222.
+Package pdftex.def Info: immagini/commons.png used on input line 223.
 (pdftex.def)             Requested size: 175.65504pt x 160.7595pt.
 
 
 LaTeX Warning: Citation 'https://github.com/tinkerpop/blueprints' on page 28 un
-defined on input line 227.
+defined on input line 228.
 
 
 LaTeX Warning: Citation 'http://tinkerpop.incubator.apache.org/' on page 28 und
-efined on input line 227.
+efined on input line 228.
 
 <immagini/storage.png, id=439, 812.03375pt x 603.25375pt>
 File: immagini/storage.png Graphic file (type png)
 
 <use immagini/storage.png>
-Package pdftex.def Info: immagini/storage.png used on input line 230.
+Package pdftex.def Info: immagini/storage.png used on input line 231.
 (pdftex.def)             Requested size: 227.36789pt x 168.9099pt.
  [28 <./immagini/commons.png> <./immagini/storage.png>] <immagini/algorithm.png
 , id=452, 876.27374pt x 559.08875pt>
 File: immagini/algorithm.png Graphic file (type png)
 
 <use immagini/algorithm.png>
-Package pdftex.def Info: immagini/algorithm.png used on input line 239.
+Package pdftex.def Info: immagini/algorithm.png used on input line 240.
 (pdftex.def)             Requested size: 262.88414pt x 167.7279pt.
  [29 <./immagini/algorithm.png>]
 <immagini/databaseschema.png, id=462, 781.92125pt x 139.52126pt>
 File: immagini/databaseschema.png Graphic file (type png)
 
 <use immagini/databaseschema.png>
-Package pdftex.def Info: immagini/databaseschema.png used on input line 254.
+Package pdftex.def Info: immagini/databaseschema.png used on input line 255.
 (pdftex.def)             Requested size: 390.95967pt x 69.76045pt.
 
-Overfull \hbox (18.95967pt too wide) in paragraph at lines 254--255
+Overfull \hbox (18.95967pt too wide) in paragraph at lines 255--256
  [][] 
  []
 
@@ -1646,86 +1646,80 @@ Overfull \hbox (18.95967pt too wide) in paragraph at lines 254--255
 <immagini/mvc.png, id=468, 980.66376pt x 655.44875pt>
 File: immagini/mvc.png Graphic file (type png)
  <use immagini/mvc.png>
-Package pdftex.def Info: immagini/mvc.png used on input line 280.
+Package pdftex.def Info: immagini/mvc.png used on input line 281.
 (pdftex.def)             Requested size: 196.12927pt x 131.08742pt.
 File: immagini/storage.png Graphic file (type png)
 
 <use immagini/storage.png>
-Package pdftex.def Info: immagini/storage.png used on input line 291.
+Package pdftex.def Info: immagini/storage.png used on input line 292.
 (pdftex.def)             Requested size: 162.40387pt x 120.6486pt.
  [31 <./immagini/mvc.png>]
 File: immagini/algorithm.png Graphic file (type png)
 
 <use immagini/algorithm.png>
-Package pdftex.def Info: immagini/algorithm.png used on input line 302.
+Package pdftex.def Info: immagini/algorithm.png used on input line 303.
 (pdftex.def)             Requested size: 262.88414pt x 167.7279pt.
  [32]
 <immagini/singleton.png, id=481, 412.54124pt x 280.79906pt>
 File: immagini/singleton.png Graphic file (type png)
 
 <use immagini/singleton.png>
-Package pdftex.def Info: immagini/singleton.png used on input line 314.
+Package pdftex.def Info: immagini/singleton.png used on input line 315.
 (pdftex.def)             Requested size: 206.27011pt x 140.39919pt.
  [33 <./immagini/singleton.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 337
+Underfull \vbox (badness 10000) detected at line 338
  []
 
 <immagini/DScheckstate.png, id=488, 548.0475pt x 380.92313pt>
 File: immagini/DScheckstate.png Graphic file (type png)
 
 <use immagini/DScheckstate.png>
-Package pdftex.def Info: immagini/DScheckstate.png used on input line 340.
+Package pdftex.def Info: immagini/DScheckstate.png used on input line 341.
 (pdftex.def)             Requested size: 235.65582pt x 163.79375pt.
 
-Underfull \vbox (badness 10000) detected at line 353
+Underfull \vbox (badness 10000) detected at line 354
  []
 
-<immagini/DSinsertBeh.png, id=489, 523.9575pt x 380.92313pt>
+[34 <./immagini/DScheckstate.png>]
+<immagini/DSinsertBeh.png, id=496, 523.9575pt x 380.92313pt>
 File: immagini/DSinsertBeh.png Graphic file (type png)
 
 <use immagini/DSinsertBeh.png>
-Package pdftex.def Info: immagini/DSinsertBeh.png used on input line 356.
+Package pdftex.def Info: immagini/DSinsertBeh.png used on input line 357.
 (pdftex.def)             Requested size: 220.06065pt x 159.98662pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34 <./immagini/DScheckstate.png>]
-Underfull \vbox (badness 10000) detected at line 370
+Underfull \vbox (badness 10000) detected at line 371
  []
 
 <immagini/DSracommandazione.png, id=497, 612.78937pt x 380.92313pt>
 File: immagini/DSracommandazione.png Graphic file (type png)
 
 <use immagini/DSracommandazione.png>
-Package pdftex.def Info: immagini/DSracommandazione.png used on input line 373.
+Package pdftex.def Info: immagini/DSracommandazione.png used on input line 374.
 
 (pdftex.def)             Requested size: 257.36978pt x 159.98662pt.
 
-Overfull \vbox (53.71367pt too high) has occurred while \output is active []
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35 <./immagini/DSinsertBeh.png> <./immagini/DSracommandazione.png>] [36]
-<immagini/flux.png, id=512, 408.52625pt x 988.69376pt>
+[35 <./immagini/DSinsertBeh.png>] [36 <./immagini/DSracommandazione.png>]
+[37] [38] <immagini/flux.png, id=523, 408.52625pt x 988.69376pt>
 File: immagini/flux.png Graphic file (type png)
- <use immagini/flux.png>
-Package pdftex.def Info: immagini/flux.png used on input line 464.
-(pdftex.def)             Requested size: 171.57985pt x 415.24855pt.
 
-[37] [38 <./immagini/flux.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+<use immagini/flux.png>
+Package pdftex.def Info: immagini/flux.png used on input line 466.
+(pdftex.def)             Requested size: 171.57985pt x 415.24855pt.
+ [39 <./immagini/flux.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 475.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 477.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1734,36 +1728,36 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [39])
-(./capitoli/capitolo-4.tex [40]
+ [40])
+(./capitoli/capitolo-4.tex [41] [42
+
+]
 Capitolo 4.
-<immagini/graficorequisiti.png, id=605, 455.45157pt x 255.95625pt>
+<immagini/graficorequisiti.png, id=614, 455.45157pt x 255.95625pt>
 File: immagini/graficorequisiti.png Graphic file (type png)
 
 <use immagini/graficorequisiti.png>
 Package pdftex.def Info: immagini/graficorequisiti.png used on input line 22.
 (pdftex.def)             Requested size: 282.37704pt x 158.69122pt.
- [41
+ [43 <./immagini/graficorequisiti.png (PNG copy)>]
 
- <./immagini/graficorequisiti.png (PNG copy)>]
-
-LaTeX Warning: Citation 'https://www.coursera.org/course/progfun' on page 42 un
+LaTeX Warning: Citation 'https://www.coursera.org/course/progfun' on page 44 un
 defined on input line 39.
 
 
-LaTeX Warning: Citation 'http://lampwww.epfl.ch/~odersky/' on page 42 undefined
+LaTeX Warning: Citation 'http://lampwww.epfl.ch/~odersky/' on page 44 undefined
  on input line 39.
 
-[42]
+[44]
 
 LaTeX Warning: Citation 'https://www.udemy.com/orientdb-getting-started/' on pa
-ge 43 undefined on input line 43.
+ge 45 undefined on input line 43.
 
-) [43] (./capitoli/capitolo-A.tex [44]
+) [45] (./capitoli/capitolo-A.tex [46]
 Appendice A.
-) [45
+) [47
 
-] [46
+] [48
 
 ] (./inizio-fine/bibliografia.tex
 
@@ -1772,7 +1766,7 @@ LaTeX Warning: Empty bibliography on input line 16.
 
 LaTeX Warning: Empty bibliography on input line 16.
 
-) [47
+) [49
 
 
 ]
@@ -1803,11 +1797,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23696 strings out of 493085
- 374921 string characters out of 6136916
- 983546 words of memory out of 5000000
- 26159 multiletter control sequences out of 15000+600000
- 38883 words of font info for 168 fonts, out of 8000000 for 9000
+ 23702 strings out of 493085
+ 374985 string characters out of 6136916
+ 983552 words of memory out of 5000000
+ 26161 multiletter control sequences out of 15000+600000
+ 39002 words of font info for 169 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,8n,122p,1962b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1831,10 +1825,10 @@ re/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1
 i0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt0800.pfb>
-Output written on tesi.pdf (55 pages, 5003597 bytes).
+Output written on tesi.pdf (57 pages, 5004828 bytes).
 PDF statistics:
- 956 PDF objects out of 1000 (max. 8388607)
- 805 compressed objects within 9 object streams
- 270 named destinations out of 1000 (max. 500000)
+ 965 PDF objects out of 1000 (max. 8388607)
+ 812 compressed objects within 9 object streams
+ 272 named destinations out of 1000 (max. 500000)
  43601 words of extra memory for PDF output out of 51595 (max. 10000000)
 

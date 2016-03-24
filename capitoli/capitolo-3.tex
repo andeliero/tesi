@@ -47,10 +47,11 @@ La figura \hyperref[fig:gantt]{3.1} presenta il diagramma di \emph{gantt} utiliz
 %**************************************************************
 \section{Analisi dei requisiti} 
 \subsection{Requisiti}
-Per l'attività di analisi dei requisiti ho svolto molteplici incontri insieme al \emph{tutor} aziendale per delineare quali funzionalità dovesse offrire il sistema. Il \emph{tutor} mi ha fornito molti esempi ed illustrazioni per capire al meglio quali requisiti il sistema dovesse soddisfare. Tuttavia questa attività è stata molto ostica perché sia il \emph{tutor} e sia il \emph{CEO} esprimevano richieste diverse e spesso molto discordanti. Visto che il proponente non aveva le idee molto chiare sul sistema da implementare, ho cercato di assumere un atteggiamento più propositivo per aiutarlo a comprendere i suoi bisogni e portare a termine l'analisi dei requisiti. Una volta definito le funzionalità, ho trascritto i requisiti in un file testuale, in un formato organizzato tabellare. Visto le dimensioni ridotte del progetto ho prediletto il tracciamento dei requisiti con un file di testo anziché utilizzare un sistema automatizzato. Il file è stato poi sottoposto a versionamento all'interno del \emph{repository} per permettere operazioni di consultazione e modifica all'evolversi dei requisiti. La notazione scelta per suddividere i requisiti è la seguente: 
+Per l'attività di analisi dei requisiti ho svolto molteplici incontri insieme al \emph{tutor} aziendale per delineare quali funzionalità dovesse offrire il sistema. Il \emph{tutor} mi ha fornito molti esempi ed illustrazioni per capire al meglio quali requisiti il sistema dovesse soddisfare. Tuttavia questa attività è stata molto ostica perché sia il \emph{tutor} e sia il \emph{CEO} esprimevano richieste diverse e spesso molto discordanti. Visto che il proponente non aveva una visione chiara sul sistema da implementare, ho cercato di assumere un atteggiamento più propositivo per aiutarlo a comprendere i suoi bisogni e portare a termine l'analisi dei requisiti nei tempi prefissati. Una volta definito le funzionalità, ho trascritto i requisiti in un file testuale, in un formato organizzato tabellare. Visto le dimensioni ridotte del progetto ho prediletto il tracciamento dei requisiti con un file di testo anziché utilizzare un sistema automatizzato. Il file è stato poi sottoposto a versionamento all'interno del \emph{repository} per permettere operazioni di consultazione e modifica all'evolversi dei requisiti. La notazione scelta per suddividere i requisiti è la seguente: 
 \begin{center}
 R[Importanza][Tipologia][Codice]
 \end{center}
+\newpage
 \begin{itemize}
 \item Importanza può assumere i seguenti valori:
 \begin{itemize}
@@ -241,11 +242,11 @@ Il \emph{package} \emph{algorithm} contiene le componenti \emph{software} che re
 \label{fig:pack-algorithm}
 \end{figure}
 \subsection{Database}
-Rispetto alle esperienze precedenti come nel mio corso di laurea dove ho utilizzato tecnologie più tradizionali come i database relazionali, questa occasione mi ha permesso di utilizzare un database NoSQL come OrientDb. Questo database supporta diversi modelli di persistenza, e per questo progetto ho utilizzato il modello a grafo che fa riferimento direttamente alla \emph{teoria dei grafi}. In particolare la variante di grafo che OrientDb utilizza è \emph{property graph} quindi per la modellazione ho tenuto presente i seguenti concetti:
+Rispetto alle esperienze precedenti come nel mio corso di laurea dove ho utilizzato tecnologie più tradizionali come i \emph{database} relazionali, questa occasione mi ha permesso di utilizzare un database \emph{NoSQL} come OrientDb. Questo \emph{database} supporta diversi modelli di persistenza, e per questo progetto ho utilizzato il modello a grafo che fa riferimento direttamente alla \emph{teoria dei grafi}. In particolare la variante di grafo che OrientDb utilizza è \emph{property graph} quindi per la modellazione ho tenuto presente i seguenti concetti:
 \begin{itemize}
 \item I vertici sono delle entità mentre gli spigoli rappresentano le relazioni;
 \item Una entità contiene un chiave identificativa e delle proprietà; 
-\item Una relazione è espressa tramite una label e collega due entità, la direzione della relazione è importante per la semantica della relazione, una relazione inoltre può contenere delle proprietà.
+\item Una relazione è espressa tramite una \emph{label} e collega due entità, la direzione della relazione è importante per la semantica della relazione, una relazione inoltre può contenere delle proprietà.
 \end{itemize}
 In OrientDb è possibile aggiungere attributi agli spigoli ma è fortemente sconsigliato per motivi prestazionali\footnote{http://orientdb.com/docs/last/Performance-Tuning-Graph.html}. Per la persistenza dei dati ho scelto una definizione dei dati di tipo \emph{schema-full} per evitare un controllo dei dati a \emph{run-time} nelle componenti del \emph{package} \emph{storage}.
 \newpage
@@ -265,9 +266,9 @@ Le entità principali individuate sono:
 \end{itemize}
 Le relazioni individuate sono:
 \begin{itemize}
-\item \textbf{Interaction:} Questa relazione parte dalla entità Behavior e arriva a WidgetTag. Esprime principalmente che un Behavior ha interagito sul WidgetTag collegato con una azione specifica;
-\item \textbf{Result:} Questa relazione parte da entità Behavior e arriva a Item. Esprime il risultato di un Behavior;
-\item \textbf{HoldsTag:} Questa relazione parte da Item e arriva a Tag. Esprime i Tag che descrivono l'entità Item.
+\item \textbf{Interaction:} Questa relazione parte dalla entità \emph{Behavior} e arriva a \emph{WidgetTag}. Esprime principalmente che un \emph{Behavior} ha interagito sul \emph{WidgetTag} collegato con una azione specifica;
+\item \textbf{Result:} Questa relazione parte da entità \emph{Behavior} e arriva a \emph{Item}. Esprime il risultato di un \emph{Behavior};
+\item \textbf{HoldsTag:} Questa relazione parte da \emph{Item} e arriva a \emph{Tag}. Esprime i \emph{Tag} che descrivono l'entità \emph{Item}.
 \end{itemize}
 %Da un \emph{behavior} si dirama l'associazione verso un \emph{Item} attraverso lo spigolo \emph{Result} ed esprime che il comportamento dell'utente ha come risultato un \emph{Item}. Un \emph{Item} è descritto con una serie di \emph{Tag}, quindi un vertice di tipo \emph{Item} è associato a molteplici \emph{Tag} tramite uno spigolo \emph{HoldsTag}. Un \emph{Behavior} descrive una serie di interazioni su dei \emph{WidgetTag}, quindi un vertice di tipo \emph{Behavior} è associato a molteplici \emph{WidgetTag} tramite uno spigolo \emph{Interaction}. \emph{Interaction} contiene la tipologia svolta su di un determinato \emph{WidgetTag}.
 
@@ -283,7 +284,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} viene utilizzato per separare i compiti delle diverse componenti \emph{software} dell'applicazione, separando \emph{business logic}, \emph{application logic} e viste, rappresentate rispettivamente da \emph{models}, \emph{controller} e \emph{views};
-\item \textbf{Contesto di utilizzo:} questo \emph{pattern} viene implementato nativamente dal \emph{framework} Play. In particolare implementa una tipologia di \emph{MVC pull-model} che permette un salto tecnologico tra la \emph{view} e il \emph{controller}. Questo pattern architetturale è importantissimo in azienda perché permette di lavorare parallelamente sulle componenti. In genere i programmatori lavorano sulle componenti del controller e del model, invece i designer lavorano sulle componenti di view. (RIVEDERE?)
+\item \textbf{Contesto di utilizzo:} questo \emph{pattern} viene implementato nativamente dal \emph{framework} Play. In particolare implementa una tipologia di \emph{MVC pull-model} che permette un salto tecnologico tra la \emph{view} e il \emph{controller}. Questo \emph{pattern} architetturale è importante perché perché permette ai programmatori di lavorare sulle componenti del \emph{controller} e del \emph{model}, mentre i grafici sulle componenti di \emph{view}.
 \end{itemize}
 \subsubsection{Dao}
 \begin{figure}[h]
@@ -293,7 +294,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \label{fig:pattern-dao}
 \end{figure}
 \begin{itemize}
-\item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} è utilizzato per disaccoppiare la logica di \emph{business} dalla logica di persistenza. Per rendere così le componenti indipendenti dal sistema di \emph{database};
+\item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} è utilizzato per disaccoppiare la logica di \emph{business} dalla logica di persistenza. Rende così le componenti indipendenti dal sistema di \emph{database};
 \item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package storage} per interagire col \emph{database} OrientDb. L'azienda utilizza diverse tecnologie di persistenza dei dati, e quindi per essere facilmente interscambiabile in scenari futuri è importante l'utilizzo di questo pattern che permette una facile transizione da una tecnologia all'altra.
 \end{itemize}
 \subsubsection{Strategy}
@@ -304,8 +305,8 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \label{fig:pattern-strategy}
 \end{figure}
 \begin{itemize}
-\item\textbf{Scopo dell'utilizzo:} il \emph{design pattern strategy} definisce una famiglia di algoritmi, incapsulati e resi intercambiabili. \emph{Strategy} permette agli algoritmi di variare indipendentemente dai client che ne fanno uso;
-\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo che viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}. Ho ritenuto importante applicare questo pattern nell'ottica di rendere l'algoritmo facilmente interscambiabile con altri algoritmi di raccomandazione, come ad esempio degli algoritmi basati sulla teoria dei giochi.
+\item\textbf{Scopo dell'utilizzo:} il \emph{design pattern strategy} definisce una famiglia di algoritmi, incapsulati e resi intercambiabili. \emph{Strategy} permette agli algoritmi di variare indipendentemente dai \emph{client} che ne fanno uso;
+\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo che viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}. Ho ritenuto importante applicare questo \emph{pattern} nell'ottica di rendere l'algoritmo facilmente interscambiabile con altri algoritmi di raccomandazione, come ad esempio degli algoritmi basati sulla teoria dei giochi.
 \end{itemize}
 \newpage
 \subsubsection{Singleton}
@@ -317,7 +318,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} il \emph{design pattern singleton} assicura che una certa classe abbia una sola istanza e fornisce un punto d'acceso globale a tale istanza;
-\item \textbf{Contesto di utilizzo:} viene utilizzato nelle componenti del \emph{package controller} e viene implementato nativamente dal linguaggio Scala dichiarando la classe come \emph{object}. Il suo utilizzo è importante perché previene da inutili sprechi di memoria che si avrebbero in un contesto \emph{multi-thread} come questo applicativo \emph{web}.
+\item \textbf{Contesto di utilizzo:} viene utilizzato nelle componenti del \emph{package controller} e viene implementato nativamente dal linguaggio Scala dichiarando la classe come \emph{object}. L'utilizzo di questo pattern è fondamentale in questo contesto perché permette il controllo completo delle modalità e tempistiche di accesso del \emph{client}.
 \end{itemize}
 %**************************************************************
 
@@ -326,7 +327,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 %**************************************************************
 \newpage
 \section{Progettazione di dettaglio}
-La progettazione di dettaglio con la metodologia \emph{agile} avviene di pari passo durante la codifica, il che è rischioso perché introduce molti errori di codifica, tuttavia le ore risparmiate della progettazione di dettaglio sono state reimpiegate nel correggere eventuali errori. Riporto qui di seguito i diagrammi di sequenza UML più significativi:
+La progettazione di dettaglio con la metodologia \emph{agile} avviene di pari passo durante la codifica, il che è rischioso perché introduce molti errori di codifica. E' necessario avere una forte conoscenza del dominio tecnico per poter procedere e non cadere nel modello \emph{code and fix}. Rispetto alle metodologie tradizionali il focus si sposta nella codifica anziché nella progettazione e quindi le ore risparmiate della progettazione di dettaglio sono state reimpiegate nel correggere eventuali errori. Riporto qui di seguito i diagrammi di sequenza \emph{UML} più significativi:
 \subsection{Controllo stato}
 In fase di \emph{startup} il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni. Un modo per verificare lo stato operativo del modulo è attraverso una chiamata mediante questa chiamata dell'interfaccia \emph{REST}:\\
 \def\arraystretch{1.5}
@@ -361,7 +362,7 @@ Da Bdrim arriva una richiesta \emph{HTTP POST} che comprende un \emph{Json} cont
 
 
 \subsection{Raccomandazione}
-Una volta raccolti almeno 100 \emph{Behavior} e che l'algoritmo ha generato l'albero, il sistema è in grado di fornire una raccomandazione. Ho implementato la procedura di raccomandazione mediante questa chiamata dell'interfaccia REST:
+Una volta raccolti almeno 100 \emph{Behavior} e che l'algoritmo ha generato l'albero, il sistema è in grado di fornire una raccomandazione. Ho implementato la procedura di raccomandazione mediante questa chiamata dell'interfaccia \emph{REST}:
 \def\arraystretch{1.5}
 \begin{longtable}{|p{2.5cm}|p{5cm}|l|}
 \hline
@@ -383,7 +384,7 @@ Da Bdrim arriva una richiesta \emph{HTTP POST} che comprende un \emph{Json} cont
 %**************************************************************
 \newpage
 \section{Verifica e Validazione}
-Questa sezione descrive l'attività di verifica e validazione svolta durante la realizzazione di Tres, indicando gli strumenti utilizzati utilizzati, le metriche utilizzate e infine un resoconto finale dei test. L'attività di verifica mi ha permesso di individuare prontamente errori di codifica e ridurre i tempi di sviluppo. Ho cercato di automatizzare il più possibile questa attività per focalizzarmi nello sviluppo. In primis ho effettuato dei test di unità per le componenti più complesse e successivamente ho verificato la loro integrazione. Per motivi di tempo non ho potuto realizzare tutti test di unità e di integrazione per tutte le componenti, mi sono focalizzato sulle componenti principali. 
+Questa sezione descrive l'attività di verifica e validazione svolta durante la realizzazione di Tres, indicando gli strumenti utilizzati, le metriche utilizzate e infine un resoconto finale dei test. L'attività di verifica mi ha permesso di individuare prontamente errori di codifica e ridurre i tempi di sviluppo. Ho cercato di automatizzare il più possibile questa attività per focalizzarmi nello sviluppo. In primis ho effettuato dei test di unità per le componenti più complesse e successivamente ho verificato la loro integrazione. Per motivi di tempo non ho potuto realizzare tutti test di unità e di integrazione per tutte le componenti, mi sono focalizzato sulle componenti principali. 
 \subsubsection{Strumenti}
 Durante lo sviluppo ho utilizzato il più possibile degli automatismi che mi permettessero di fare analisi statica e dinamica risparmiando più tempo possibile. Ho adottato i seguenti strumenti:
 \begin{itemize}
@@ -392,13 +393,13 @@ Durante lo sviluppo ho utilizzato il più possibile degli automatismi che mi per
 \item \textbf{Codecov:} questo strumento fornisce la percentuale delle linee di codice coperte durante i \emph{test}.
 \item \textbf{Specs2:} è una libreria di \emph{testing} fornita direttamente da Play Framework. Mi ha permesso di testare l'intera applicazione anche con le chiamate HTTP.
 \end{itemize}
+\newpage
 \subsubsection{Metriche adottate}
 Per la realizzazione di Tres ho adottato le seguenti metriche:
 \begin{itemize}
 \item \textbf{Attributi per classe:}  un numero troppo elevato di attributi potrebbe indicare la necessità di suddividere la classe in una gerarchia. Ho fissato un \emph{range} ottimale i seguenti valori, un minimo 1 fino ad un massimo di 8;
 \item \textbf{Complessità ciclomatica:} è un indice utilizzato per misurare la complessità di funzioni, metodi, moduli e classi di un programma. Misura direttamente il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo. Per questa metrica ho fissato un \textit{range} ottimale da un minimo di 1 fino ad un massimo di 10;
 \item \textbf{Copertura dei commenti:} è indice della percentuale di classi e metodi corredati di commenti. Ho fissato un range ottimale da 80\% a 100\%;
-\newpage
 \item \textbf{Copertura dei test:} è una metrica utilizzata per misurare l'efficacia del collaudo. Si utilizza un indice che tiene traccia di quante volte è stata eseguita ogni istruzione durante il \emph{testing}, le istruzioni eseguite almeno una volta sono dette "coperte". L'obiettivo è coprire il maggior numero possibile di istruzioni, in modo da avere una minore quantità di errore. Per questa metrica ho fissato un valore ottimale minimo di 70\%.
 \end{itemize}
 \subsection{Resoconto risultati}
@@ -411,9 +412,9 @@ Qui di seguito sono riportate le metriche software misurate:
 \item \textbf{Copertura dei test:} il valore di copertura dei \emph{test} è del 73\%.
 \end{itemize}
 \subsubsection{Test di unità e di integrazione}
-I test di unità vengono svolti incrementalmente durante la codifica di ogni componente, i primi test che ho effettuato riguardano principalmente le componenti base del models e quelle responsabili delle iterazioni con il database. Successivamente sono passato al testing per la parte di algoritmica presente nel package algorithm. Per i test di unità ho evitato di utilizzare mock e stub per le componenti base presenti in commons in quanto ritenevo quelle componenti molto semplici e che non avrebbero introdotto errori o comportamenti non attesi. Man mano ho integrato le componenti con queste modalità per le parti di algoritmica e di integrazione col database ho seguito un approccio bottom-up. Ho focalizzato i test di integrazione di integrazione nella parte di algoritmica perché l'incertezza del comportamento di quelle componenti era altissima.
+I \emph{test} di unità vengono svolti incrementalmente durante la codifica di ogni componente. I primi \emph{test} che ho effettuato riguardano principalmente le componenti base del \emph{models} e quelle responsabili delle iterazioni con il \emph{database}. Successivamente sono passato al \emph{testing} della parte di algoritmica presente nel \emph{package algorithm}. Per i \emph{test} di unità ho evitato di utilizzare \emph{mock} e \emph{stub} per le componenti base presenti in \emph{commons}, in quanto ritenevo quelle componenti molto elementari e che non avrebbero introdotto errori o comportamenti non attesi. Per l'integrazione delle componenti ho seguito un approccio \emph{bottom-up}, questi mi ha aiutato a ridurre i tempi di \emph{testing} evitando sprechi di risorse utilizzando \emph{mock} e {stub}. Ho focalizzato i \emph{test} di integrazione nella parte di algoritmica e in quelle di interazione col \emph{database} perché l'incertezza del comportamento di quelle componenti era altissima.
 %Mentre per il testing di integrazione delle componenti dei controller ho seguito un approccio top-dow, mi sono servito di alcuni mock che mi hanno permesso di simulare le componenti da cui erano dipendenti.
-Al netto dell'attività di testing i test di unità eseguiti ammontano ad un totale di 10 di cui 10 hanno esito positivo, mentre per quanto riguarda l'integrazione delle componenti sono stati eseguiti un totale di 3 test di integrazione di cui 3 hanno avuto esito positivo.
+Al netto dell'attività di \emph{testing} i test di unità eseguiti ammontano ad un totale di 10 di cui 10 hanno esito positivo, mentre per quanto riguarda l'integrazione delle componenti sono stati eseguiti un totale di 3 \emph{test} di integrazione di cui 3 hanno avuto esito positivo.
 
 %\subsubsection{Test di unità}
 %Qui di seguito sono riportati tutti i \emph{test} di unità eseguiti e il loro relativo esito:
@@ -457,8 +458,9 @@ Ho effettuato alcuni \emph{test} di sistema inerenti alle funzionalità di inser
 
 
 %***************************************************************************************************************
+\newpage
 \section{Sommario funzionamento}
-Questa sezione descrive il funzionamento del sistema realizzato durante lo stage. Qui di seguito viene illustrato il funzionamento dal punto di vista del client che utilizza il modulo.
+Questa sezione descrive il funzionamento del sistema realizzato durante lo stage. Qui di seguito viene illustrato il funzionamento dal punto di vista del \emph{client} che utilizza il modulo.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.42]{immagini/flux}
@@ -466,8 +468,8 @@ Questa sezione descrive il funzionamento del sistema realizzato durante lo stage
 \label{fig:flux}
 \end{figure}
 \newpage
-In fase di startup il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni.
-Il client deve dunque verificare lo stato di operatività del sistema attraverso una chiamata HTTP a:\\
+In fase di \emph{startup} il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni.
+Il \emph{client} deve dunque verificare lo stato di operatività del sistema attraverso una chiamata \emph{HTTP} a:\\
 \begin{center}
 GET    /tres/ready
 \end{center}
@@ -477,11 +479,11 @@ Il client ottiene così un oggetto Json simile al seguente.
   "ready":false
 }
 \end{lstlisting}
-La risposta HTTP ritorna un oggetto Json contentente un booleano che indica l'operatività del modulo. L'operatività dipende prima di tutto se sono stati inseriti abbastanza comportamenti utente, quindi se non è operativo si continua con la procedura di inserimento dei comportamenti tramite la chiamata:
+La risposta \emph{HTTP} ritorna un oggetto \emph{Json} contenente un \emph{booleano} che indica l'operatività del modulo. L'operatività dipende essenzialmente dal numero di comportamenti utente inseriti nel sistema, quindi se non è operativo si continua con la procedura di inserimento dei comportamenti tramite la chiamata:
 \begin{center}
 POST    /tres/behavior
 \end{center}
-L'oggetto Json da inviare tramite questa chiamata deve contenere un Json simile al seguente.
+L'oggetto da inviare tramite questa chiamata deve contenere un \emph{Json} simile al seguente.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "item":{
@@ -510,12 +512,12 @@ L'oggetto Json da inviare tramite questa chiamata deve contenere un Json simile 
   ]
 }
 \end{lstlisting}
-Un comportamento si registra solamente quando le azioni dell'utente hanno prodotto un risultato all'interno del sito (come ad esempio un acquisto nel caso di un \emph{e-commerce}). Una volta generato l'albero, Tres è in grado di fornire raccomandazioni agli utenti e quindi si il Client può iniziare la procedura di per richiedere una raccomandazione. Il client innanzitutto deve richiedere a Tres con quale argomento interrogare l'utente mediante la chiamata HTTP a: 
+Un comportamento si registra solamente quando le azioni dell'utente hanno prodotto un risultato all'interno del sito (come ad esempio un acquisto nel caso di un \emph{e-commerce}). Una volta generato l'albero, Tres è in grado di fornire raccomandazioni agli utenti e quindi il \emph{client} può iniziare la procedura di per richiedere una raccomandazione. Il \emph{client} innanzitutto deve richiedere a Tres con quale argomento interrogare l'utente mediante la seguente chiamata \emph{HTTP}. 
 \begin{center}
 POST    /tres/answer
 \end{center}
 \newpage
-La chiamata deve comprendere un oggetto Json che contiene le interazioni che l'utente web ha già svolto.
+La chiamata deve comprendere un oggetto \emph{Json} che contiene le interazioni che l'utente ha già svolto.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "interactions":[
@@ -534,17 +536,17 @@ La chiamata deve comprendere un oggetto Json che contiene le interazioni che l'u
   ]
 }
 \end{lstlisting}
-Questa chiamata fornisce come risposta il prossimo WidgetTag da utilizzare per interrogare l'utente del sito web come il seguente oggetto Json.
+Questa chiamata fornisce come risposta il prossimo \emph{WidgetTag} da utilizzare per interrogare l'utente del sito come il seguente oggetto \emph{Json}.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   name: "Income"
 }
 \end{lstlisting}
-L'utente va ad interagire con il WidgetTag con cui lo interroghiamo, così il client aggiunge l'interazione alle interazioni precedentemente salvate. Il client deve continuare a reiterare questa chiamata aggiungendo le interazioni finché Tres fornisce dei WidgetTag per interrogare l'utente. Se Tres non fornisce altri WidgetTag significa che la classificazione del comportamento è terminata ed è possibile per il client procedere con la richiesta della raccomandazione. La chiamata HTTP da effettuare è la seguente.
+L'utente va ad interagire con il \emph{WidgetTag} con cui lo interroghiamo, dopodiché il \emph{client} aggiunge l'interazione alle interazioni precedentemente salvate. Il \emph{client} deve continuare a reiterare questa chiamata aggiungendo le interazioni finché Tres continua a fornire dei \emph{WidgetTag} per interrogare l'utente. Se Tres non fornisce altri \emph{WidgetTag} significa che la classificazione del comportamento è terminata ed è possibile per il \emph{client} procedere con la richiesta della raccomandazione. La chiamata \emph{HTTP} da effettuare è la seguente.
 \begin{center}
 POST    /tres/recommendation
 \end{center}
-Nella chiamata dev'essere inserito il Json contenente le interazioni dell'utente. La risposta di Tres comprende un oggetto Json dove vengono indicate le percentuali dei prodotti/oggetti/post da raccomandare all'utente.
+Nella chiamata dev'essere presente il \emph{Json} contenente le interazioni dell'utente. La risposta di Tres comprende un oggetto \emph{Json} dove vengono indicate le percentuali dei prodotti/oggetti/post da raccomandare all'utente.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "items":[
@@ -564,5 +566,5 @@ Nella chiamata dev'essere inserito il Json contenente le interazioni dell'utente
   ]
 }
 \end{lstlisting}
-Quando il comportamento dell'utente ha prodotto un risultato il client inserisce il suo comportamento in Tres e termina la procedura.
+Quando il comportamento dell'utente ha prodotto un risultato il \emph{client} inserisce il suo comportamento nel sistema e termina la procedura.
 %**************************************************************
