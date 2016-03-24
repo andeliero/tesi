@@ -397,8 +397,8 @@ Per la realizzazione di Tres ho adottato le seguenti metriche:
 \begin{itemize}
 \item \textbf{Attributi per classe:}  un numero troppo elevato di attributi potrebbe indicare la necessità di suddividere la classe in una gerarchia. Ho fissato un \emph{range} ottimale i seguenti valori, un minimo 1 fino ad un massimo di 8;
 \item \textbf{Complessità ciclomatica:} è un indice utilizzato per misurare la complessità di funzioni, metodi, moduli e classi di un programma. Misura direttamente il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo. Per questa metrica ho fissato un \textit{range} ottimale da un minimo di 1 fino ad un massimo di 10;
-\newpage
 \item \textbf{Copertura dei commenti:} è indice della percentuale di classi e metodi corredati di commenti. Ho fissato un range ottimale da 80\% a 100\%;
+\newpage
 \item \textbf{Copertura dei test:} è una metrica utilizzata per misurare l'efficacia del collaudo. Si utilizza un indice che tiene traccia di quante volte è stata eseguita ogni istruzione durante il \emph{testing}, le istruzioni eseguite almeno una volta sono dette "coperte". L'obiettivo è coprire il maggior numero possibile di istruzioni, in modo da avere una minore quantità di errore. Per questa metrica ho fissato un valore ottimale minimo di 70\%.
 \end{itemize}
 \subsection{Resoconto risultati}
@@ -458,28 +458,30 @@ Ho effettuato alcuni \emph{test} di sistema inerenti alle funzionalità di inser
 
 %***************************************************************************************************************
 \section{Sommario funzionamento}
-Questa sezione descrive il funzionamento del sistema realizzato durante lo stage.
-In fase di startup il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni. \\
-Un modo per verificare lo stato operativo del modulo è attraverso una chiama a:\\
+Questa sezione descrive il funzionamento del sistema realizzato durante lo stage. Qui di seguito viene illustrato il funzionamento dal punto di vista del client che utilizza il modulo.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.42]{immagini/flux}
+\caption{Diagramma di sequenza: raccomandazione.}
+\label{fig:flux}
+\end{figure}
+\newpage
+In fase di startup il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni.
+Il client deve dunque verificare lo stato di operatività del sistema attraverso una chiamata HTTP a:\\
 \begin{center}
 GET    /tres/ready
 \end{center}
-
+Il client ottiene così un oggetto Json simile al seguente.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "ready":false
 }
 \end{lstlisting}
-
-Viene indicato con un booleano l'operatività del modulo. L'operatività dipende prima di tutto se è stato generato albero. La sua generazione è programmata ogni 24 ore e necessita di almeno 100 behavior per essere eseguita.\\
-
-
-
-Per la procedura di inserimento dei comportamenti si usa la chiamata:
+La risposta HTTP ritorna un oggetto Json contentente un booleano che indica l'operatività del modulo. L'operatività dipende prima di tutto se sono stati inseriti abbastanza comportamenti utente, quindi se non è operativo si continua con la procedura di inserimento dei comportamenti tramite la chiamata:
 \begin{center}
 POST    /tres/behavior
 \end{center}
-
+L'oggetto Json da inviare tramite questa chiamata deve contenere un Json simile al seguente.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "item":{
@@ -495,18 +497,6 @@ POST    /tres/behavior
   "interactions":[
     {
       "widgetTag":{
-        "name":"District"
-      },
-      "action":"Suburban"
-    },
-    {
-      "widgetTag":{
-        "name":"HouseType"
-      },
-      "action":"Detached"
-    },
-    {
-      "widgetTag":{
         "name":"Income"
       },
       "action":"High"
@@ -520,15 +510,12 @@ POST    /tres/behavior
   ]
 }
 \end{lstlisting}
-Un behavior non può contenere più interazioni con lo stesso Widget Tag e un Item deve contenere almeno un Tag.\\
-Una volta generato l'albero è possibile richiedere la raccomandazione.\\
-La prima chiamata da effettuare è:
-
+Un comportamento si registra solamente quando le azioni dell'utente hanno prodotto un risultato all'interno del sito (come ad esempio un acquisto nel caso di un \emph{e-commerce}). Una volta generato l'albero, Tres è in grado di fornire raccomandazioni agli utenti e quindi si il Client può iniziare la procedura di per richiedere una raccomandazione. Il client innanzitutto deve richiedere a Tres con quale argomento interrogare l'utente mediante la chiamata HTTP a: 
 \begin{center}
 POST    /tres/answer
 \end{center}
-
-e nel body dev'essere inserito un array di interazioni(anche vuoto all'inizio)
+\newpage
+La chiamata deve comprendere un oggetto Json che contiene le interazioni che l'utente web ha già svolto.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "interactions":[
@@ -547,22 +534,17 @@ e nel body dev'essere inserito un array di interazioni(anche vuoto all'inizio)
   ]
 }
 \end{lstlisting}
-Questa chiamata fornisce in output il prossimo Widget Tag da utilizzare per interrogare l'utente.
-Output:
+Questa chiamata fornisce come risposta il prossimo WidgetTag da utilizzare per interrogare l'utente del sito web come il seguente oggetto Json.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   name: "Income"
 }
 \end{lstlisting}
-Se la risposta è null la classificazione del comportamento è terminata ed è possibile procedere con la raccomandazione( nb: è possibile richiedere la raccomandazione in ogni momento).\\
-La chiamate da effettuare è:
-
+L'utente va ad interagire con il WidgetTag con cui lo interroghiamo, così il client aggiunge l'interazione alle interazioni precedentemente salvate. Il client deve continuare a reiterare questa chiamata aggiungendo le interazioni finché Tres fornisce dei WidgetTag per interrogare l'utente. Se Tres non fornisce altri WidgetTag significa che la classificazione del comportamento è terminata ed è possibile per il client procedere con la richiesta della raccomandazione. La chiamata HTTP da effettuare è la seguente.
 \begin{center}
 POST    /tres/recommendation
 \end{center}
-
-nel body va inserito lo stesso input di interazioni della chiamata precedente e in output avremo gli item della raccomandazione insieme alla percentuale.
-
+Nella chiamata dev'essere inserito il Json contenente le interazioni dell'utente. La risposta di Tres comprende un oggetto Json dove vengono indicate le percentuali dei prodotti/oggetti/post da raccomandare all'utente.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "items":[
@@ -582,5 +564,5 @@ nel body va inserito lo stesso input di interazioni della chiamata precedente e 
   ]
 }
 \end{lstlisting}
-
+Quando il comportamento dell'utente ha prodotto un risultato il client inserisce il suo comportamento in Tres e termina la procedura.
 %**************************************************************

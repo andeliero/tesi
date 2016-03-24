@@ -140,16 +140,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Bilancio formativo}{42}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Scala}{42}{section*.66}
+\contentsline {subsubsection}{Scala}{42}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Programmazione funzionale}{43}{section*.67}
+\contentsline {subsubsection}{Programmazione funzionale}{43}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{OrientDb}{43}{section*.68}
+\contentsline {subsubsection}{OrientDb}{43}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Play Framework}{43}{section*.69}
+\contentsline {subsubsection}{Play Framework}{43}{section*.70}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Distanza tra formazione universitaria e lavoro}{43}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendice A}{45}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{47}{appendix*.70}
+\contentsline {chapter}{Bibliografia}{47}{appendix*.71}
