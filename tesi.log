@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  25 MAR 2016 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  29 MAR 2016 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1742,22 +1742,22 @@ Package pdftex.def Info: immagini/graficorequisiti.png used on input line 22.
  [43 <./immagini/graficorequisiti.png (PNG copy)>]
 
 LaTeX Warning: Citation 'https://www.coursera.org/course/progfun' on page 44 un
-defined on input line 39.
+defined on input line 41.
 
 
 LaTeX Warning: Citation 'http://lampwww.epfl.ch/~odersky/' on page 44 undefined
- on input line 39.
+ on input line 41.
 
 [44]
 
 LaTeX Warning: Citation 'https://www.udemy.com/orientdb-getting-started/' on pa
-ge 45 undefined on input line 43.
+ge 45 undefined on input line 45.
 
-) [45] (./capitoli/capitolo-A.tex [46]
+) (./capitoli/capitolo-A.tex [45] [46
+
+]
 Appendice A.
-) [47
-
-] [48
+) [47] [48
 
 ] (./inizio-fine/bibliografia.tex
 
@@ -1797,11 +1797,11 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23702 strings out of 493085
- 374985 string characters out of 6136916
+ 23700 strings out of 493085
+ 374961 string characters out of 6136916
  983552 words of memory out of 5000000
  26161 multiletter control sequences out of 15000+600000
- 39002 words of font info for 169 fonts, out of 8000000 for 9000
+ 38883 words of font info for 168 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,8n,122p,1962b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1825,7 +1825,7 @@ re/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1
 i0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt0800.pfb>
-Output written on tesi.pdf (57 pages, 5004828 bytes).
+Output written on tesi.pdf (57 pages, 5003597 bytes).
 PDF statistics:
  965 PDF objects out of 1000 (max. 8388607)
  812 compressed objects within 9 object streams
