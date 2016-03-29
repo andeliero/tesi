@@ -4,11 +4,28 @@
 %**************************************************************
 \renewcommand{\acronymname}{Acronimi e abbreviazioni}
 
+\newacronym[description={\glslink{umlg}{Unified Modeling Language}}]
+    {uml}{UML}{Unified Modeling Language}
+
+\newacronym[description={\glslink{ictg}{Information Communication Technology}}]
+		{ict}{ICT}{Information Communication Technology}
+
+\newacronym[description={\glslink{cmsg}{Content Management System}}]
+		{cms}{CMS}{Content Management System}
+
+\newacronym[description={\glslink{mvcg}{Model View Controller}}]
+    {mvc}{MVC}{Model View Controller}
+
+\newacronym[description={\glslink{daog}{Data Access Object}}]
+    {dao}{DAO}{Data Access Object}
+
+\newacronym[description={\glslink{ideg}{Integrated Development Environment}}]
+    {ide}{IDE}{Integrated Development Environment}
+
+
 \newacronym[description={\glslink{apig}{Application Program Interface}}]
     {api}{API}{Application Program Interface}
 
-\newacronym[description={\glslink{umlg}{Unified Modeling Language}}]
-    {uml}{UML}{Unified Modeling Language}
 
 %**************************************************************
 % Glossario
@@ -17,9 +34,74 @@
 
 \newglossaryentry{core business}
 {
-    name=\glslink{corse business}{Core business},
+    name=\glslink{core business}{Core business},
     text=core business,
     sort=core business,
     description={Il core business è l'attività principale di un'azienda, ovvero la base su cui si basa il fatturato e il guadagno a fine esercizio}
 }
 
+\newglossaryentry{ictg}
+{
+		name=\glslink{ict}{ICT},
+		text=Information Communication Technology,
+		sort=ict,
+		description={sono l'insieme dei metodi e delle tecnologie che realizzano i sistemi di trasmissione, ricezione ed elaborazione di informazioni (tecnologie digitali comprese)}
+}
+
+\newglossaryentry{cmsg}
+{
+    name=\glslink{cms}{CMS},
+    text=Content Management System,
+    sort=content management system,
+    description={strumento software installato su un server web studiato per facilitare la
+gestione dei contenuti dei siti web, svincolando l’amministratore da conoscenze
+tecniche di programmazione}
+}
+
+\newglossaryentry{mvcg}
+{
+    name=\glslink{mvc}{MVC},
+    text=Model View Controller,
+    sort=model view controller,
+    description={il Model-View-Controller, in informatica, è un pattern architetturale molto diffuso nello sviluppo di sistemi software, in particolare nell’ambito della programmazione orientata agli oggetti, in grado di separare la logica di presentazione dei dati dalla logica di business}
+}
+
+\newglossaryentry{framework}
+{
+    name=\glslink{framework}{Framework},
+    text=framework,
+    sort=framework,
+    description={in informatica, e specificatamente nello sviluppo software, un framework è un’architettura logica di supporto su cui un software può essere progettato e realizzato, spesso facilitandone lo sviluppo da parte del programmatore}
+}
+
+\newglossaryentry{daog}
+{
+    name=\glslink{dao}{DAO},
+    text=Data Access Object,
+    sort=data access object,
+    description={è un pattern architetturale per la gestione della persistenza: si tratta fondamentalmente di una classe con relativi metodi che rappresenta un’entità tabellare di un RDBMS, usata principalmente in applicazioni web, per stratificare e isolare l’accesso ad una tabella/record tramite query (poste all’interno dei metodi della classe) ovvero al data layer da parte della business logic creando un maggiore livello di astrazione ed una più facile manutenibilità. I metodi del DAO con le rispettive query dentro verranno così richiamati dalle classi della business logic}
+}
+
+\newglossaryentry{ideg}
+{
+    name=\glslink{ide}{IDE},
+    text=Integrated Development Environment,
+    sort=Integrated Development Environment,
+    description={software che fornisce allo sviluppatore numerosi aiuti durante lo sviluppo del codice. Esempi di aiuti sono la segnalazione degli errori di sintassi, interazione con strumenti di debug, suggerimenti di completamento del codice e strumenti per le build automatiche}
+}
+
+\newglossaryentry{apig}
+{
+    name=\glslink{api}{API},
+    text=Application Program Interface,
+    sort=api,
+    description={in informatica con il termine \emph{Application Programming Interface API} (ing. interfaccia di programmazione di un'applicazione) si indica ogni insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l'espletamento di un determinato compito all'interno di un certo programma. La finalità è ottenere un'astrazione, di solito tra l'hardware e il programmatore o tra software a basso e quello ad alto livello semplificando così il lavoro di programmazione}
+}
+
+\newglossaryentry{umlg}
+{
+    name=\glslink{uml}{UML},
+    text=Unified Modeling Language,
+    sort=uml,
+    description={in ingegneria del software UML, Unified Modeling Language è un linguaggio di modellazione e specifica basato sul paradigma object-oriented. L'UML svolge un’importantissima funzione di "lingua franca" nella comunità della progettazione e programmazione a oggetti. Gran parte della letteratura di settore usa tale linguaggio per descrivere soluzioni analitiche e progettuali in modo sintetico e comprensibile a un vasto pubblico}
+}

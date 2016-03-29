@@ -14,11 +14,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.3}Tecnologie di riferimento}{3}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Linguaggi di programmazione}{3}{section*.13}
+\contentsline {subsubsection}{Linguaggi di programmazione}{3}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Framework e CMS}{3}{section*.14}
+\contentsline {subsubsection}{\gls {framework} e \gls {cms}}{3}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Database}{4}{section*.15}
+\contentsline {subsubsection}{Database}{4}{section*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Processi aziendali}{5}{section.1.2}
 \defcounter {refsection}{0}\relax 
@@ -56,11 +56,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Vincoli tecnologici}{15}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Scala}{15}{section*.22}
+\contentsline {subsubsection}{Scala}{15}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Play Framework}{15}{section*.23}
+\contentsline {subsubsection}{Play Framework}{15}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{OrientDB}{16}{section*.25}
+\contentsline {subsubsection}{OrientDB}{16}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Obiettivi personali}{17}{section.2.4}
 \defcounter {refsection}{0}\relax 
@@ -76,9 +76,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Casi d'uso}{22}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC0}{23}{section*.30}
+\contentsline {subsubsection}{UC0}{23}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC1}{24}{section*.32}
+\contentsline {subsubsection}{UC1}{24}{section*.33}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Progettazione architetturale}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
@@ -86,25 +86,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}Architettura}{26}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{controllers}{27}{section*.36}
+\contentsline {subsubsection}{controllers}{27}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{models}{27}{section*.38}
+\contentsline {subsubsection}{models}{27}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Classi contenute}{27}{section*.40}
+\contentsline {paragraph}{Classi contenute}{27}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Package contenuti}{28}{section*.41}
+\contentsline {paragraph}{Package contenuti}{27}{section*.42}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Database}{29}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.4}Design pattern}{31}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{MVC}{31}{section*.49}
+\contentsline {subsubsection}{\gls {mvc}}{31}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dao}{31}{section*.51}
+\contentsline {subsubsection}{\gls {dao}}{31}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strategy}{32}{section*.53}
+\contentsline {subsubsection}{Strategy}{32}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Singleton}{33}{section*.55}
+\contentsline {subsubsection}{Singleton}{33}{section*.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Progettazione di dettaglio}{34}{section.3.4}
 \defcounter {refsection}{0}\relax 
@@ -116,17 +116,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Verifica e Validazione}{36}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strumenti}{36}{section*.60}
+\contentsline {subsubsection}{Strumenti}{36}{section*.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Metriche adottate}{37}{section*.61}
+\contentsline {subsubsection}{Metriche adottate}{37}{section*.62}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.1}Resoconto risultati}{37}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Metriche misurate}{37}{section*.62}
+\contentsline {subsubsection}{Metriche misurate}{37}{section*.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Test di unit\IeC {\`a} e di integrazione}{37}{section*.63}
+\contentsline {subsubsection}{Test di unit\IeC {\`a} e di integrazione}{37}{section*.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Test di sistema}{38}{section*.64}
+\contentsline {subsubsection}{Test di sistema}{38}{section*.65}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}Sommario funzionamento}{39}{section.3.6}
 \defcounter {refsection}{0}\relax 
@@ -140,16 +140,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Bilancio formativo}{44}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Scala}{44}{section*.67}
+\contentsline {subsubsection}{Scala}{44}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Programmazione funzionale}{45}{section*.68}
+\contentsline {subsubsection}{Programmazione funzionale}{45}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{OrientDb}{45}{section*.69}
+\contentsline {subsubsection}{OrientDb}{45}{section*.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Play Framework}{45}{section*.70}
+\contentsline {subsubsection}{Play Framework}{45}{section*.71}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Distanza tra formazione universitaria e lavoro}{45}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{47}{appendix.Alph1}
+\contentsline {chapter}{Glossary}{47}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{49}{appendix*.71}
+\contentsline {chapter}{Acronyms}{49}{section*.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{51}{appendix*.76}

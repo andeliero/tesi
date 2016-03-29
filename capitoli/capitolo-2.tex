@@ -40,7 +40,7 @@ Qui di seguito presento gli obiettivi dello stage:
 \begin{itemize}
 \item Formazione sui sistemi di raccomandazione e degli algoritmi di apprendimento;
 \item Studio delle tecnologie utilizzate, Scala e OrientDb;
-\item Studio degli strumenti utilizzati, in particolar modo dei \emph{framework} e degli \emph{IDE}.
+\item Studio degli strumenti utilizzati, in particolar modo dei \gls{framework} e degli \gls{ide}.
 \end{itemize}
 \item Obiettivi minimi
 \begin{itemize}
@@ -71,14 +71,14 @@ Come strumento di versionamento, ho scelto Git, già utilizzato in precedenza e 
 \caption{Pannello di controllo travis}
 \end{figure}
 \newpage
-Per lo sviluppo del codice ho scelto come \emph{IDE} IntelliJ, in quanto:
+Per lo sviluppo del codice ho scelto come \gls{ide} IntelliJ, in quanto:
 \begin{itemize}
 \item Già precedentemente utilizzato;
 \item Ambiente di sviluppo compatibile con i maggiori linguaggi \emph{JVM-based};
 \item Integrazione con Git;
 \item Integrazione per lo sviluppo in Scala con Sbt.
 \end{itemize}
-Per la gestione progetti ho utilizzato il \emph{build tool} Sbt. Nell' ambiente di sviluppo di Scala è la scelta predominante ed è compatibile con il \emph{framework} utilizzato \emph{Play Framework}. Le caratteristiche distintive di questo \emph{framework} sono elencate di seguito:
+Per la gestione progetti ho utilizzato il \emph{build tool} Sbt. Nell' ambiente di sviluppo di Scala è la scelta predominante ed è compatibile con il \gls{framework} utilizzato \emph{Play Framework}. Le caratteristiche distintive di questo \gls{framework} sono elencate di seguito:
 \begin{itemize}
 \item Definizione del file di configurazione in Scala;
 \item Compatibilità con Scaladoc per documentazione;
@@ -91,7 +91,7 @@ Per la realizzazione dei diagrammi \emph{UML} ho utilizzato Astah Professional\f
 \subsubsection{Scala}
 Il principale linguaggio di programmazione adottato è Scala\footcite{http://www.scala-lang.org/} (acronimo di \emph{"Scalable Language"}). E' stato studiato per poter interoperare con \emph{JRE}. E' possibile quindi scrivere applicazioni sia in Java e Scala, che eseguono nella stessa \emph{JVM}. E' un linguaggio multi paradigma, che integra concetti provenienti dai linguaggi della programmazione ad oggetti e della programmazione funzionale. Scala è un linguaggio completamente \emph{object oriented}, infatti ogni elemento del linguaggio è un oggetto, compresi i tipi primitivi e le funzioni. Inoltre è un linguaggio funzionale, include funzioni di prima classe e una libreria con strutture dati immutabili efficienti.
 \subsubsection{Play Framework}
-Play è un \emph{framework} \emph{open source}, scritto in Java e Scala. Permette l'implementazione di \emph{web application} con il \emph{pattern model-view-controller}. Questo \emph{framework} trae ispirazione ed è simile a Ruby on Rails e Django.
+Play è un \gls{framework} \emph{open source}, scritto in Java e Scala. Permette l'implementazione di \emph{web application} con il \emph{pattern} \gls{mvc}. Questo \gls{framework} trae ispirazione ed è simile a Ruby on Rails e Django.
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.5]{immagini/play-arch}
@@ -99,10 +99,10 @@ Play è un \emph{framework} \emph{open source}, scritto in Java e Scala. Permett
 \label{fig:play-app}
 \end{figure}
 \newpage
-Le peculiarità che lo contraddistinguono dagli altri \emph{framework}, sono le seguenti:
+Le peculiarità che lo contraddistinguono dagli altri \gls{framework}, sono le seguenti:
 \begin{itemize}
 \item Privo di stato: non viene mantenuta alcuna sessione sul server, relativa ai dati dell'utente corrente;
-\item Metodi statici: tutti i metodi dei \emph{controller} che vengono invocati dal \emph{framework} sono statici, o nel caso in cui si usi la versione Scala, sono funzioni di oggetti di Scala;
+\item Metodi statici: tutti i metodi dei \emph{controller} che vengono invocati dal \gls{framework} sono statici, o nel caso in cui si usi la versione Scala, sono funzioni di oggetti di Scala;
 \item Gestione asincrona dell'\emph{input} e dell'\emph{output}: grazie all'uso di Netty Server, Play può gestire le richieste lunghe in modo asincrono;
 \item Architettura modulare: come per Rails e Django, ci sono i moduli;
 \item Supporto nativo per Scala: non solo Play è fatto internamente in Scala, ma espone anche delle interfacce Scala. Le interfacce Java sono state messe appositamente in \emph{package} diversi, affinché possano seguire le convenzioni di Java.
@@ -119,7 +119,7 @@ Inoltre supporta modelli di definizione dello schema quali \emph{schema-less}, \
 \begin{itemize}
 \item Scalabile: ovvero è possibile aggiungere al sistema un altro \emph{server}, per aumentarne le prestazioni;
 \item Transazionale: supporta transazioni completamente \emph{ACID}, garantendo che tutte vengano processate in modo affidabile. Nel caso di \emph{crash} viene ripristinato lo stato precedente (rollback);
-\item Poliglotta: supporta \emph{query} in un dialetto \emph{SQL-like}, oppure delle \emph{API REST} che forniscono l'accesso ai dati.
+\item Poliglotta: supporta \emph{query} in un dialetto \emph{SQL-like}, oppure delle \emph{\gls{api} REST} che forniscono l'accesso ai dati.
 \end{itemize}
 \begin{figure}[ht]
 \centering
