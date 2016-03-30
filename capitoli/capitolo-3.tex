@@ -323,10 +323,10 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 
 %**************************************************************
 \newpage
-\section{Progettazione di dettaglio}%procedere da qui
-La progettazione di dettaglio con la metodologia \emph{agile} avviene di pari passo durante la codifica, il che è rischioso perché introduce molti errori di codifica. E' necessario avere una forte conoscenza del dominio tecnico per poter procedere e non cadere nel modello \emph{code and fix}. Rispetto alle metodologie tradizionali il focus si sposta nella codifica anziché nella progettazione e quindi le ore risparmiate della progettazione di dettaglio sono state reimpiegate nel correggere eventuali errori. Riporto qui di seguito i diagrammi di sequenza \emph{UML} più significativi:
+\section{Progettazione di dettaglio}
+La progettazione di dettaglio, con la metodologia \emph{agile}, avviene di pari passo durante la codifica, il che è rischioso perché introduce molti errori di codifica. E' necessario avere una forte conoscenza del dominio tecnico, per poter procedere e non cadere nel modello \emph{code and fix}. Rispetto alle metodologie tradizionali, il focus si sposta nella codifica anziché nella progettazione. Quindi le ore risparmiate della progettazione di dettaglio, sono state reimpiegate nel correggere eventuali errori di codifica. Riporto qui di seguito i diagrammi di sequenza \emph{UML} più significativi:
 \subsection{Controllo stato}
-In fase di \emph{startup} il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni. Un modo per verificare lo stato operativo del modulo è attraverso una chiamata mediante questa chiamata dell'interfaccia \emph{REST}:\\
+In fase di \emph{startup} il sistema non possiede nessun dato, quindi non è in grado di fornire raccomandazioni. Mediante questa chiamata dell'interfaccia \emph{REST}, è possibile verificare lo stato operativo del modulo:\\
 \def\arraystretch{1.5}
 \begin{longtable}{|p{2.5cm}|p{5cm}|l|}
 \hline
@@ -339,10 +339,10 @@ GET		&	/tres/ready		 \\\hline
 \caption{Diagramma di sequenza: controllo stato.}
 \label{fig:seq-controllostato}
 \end{figure}
-Mediante il \emph{router} la richiesta \emph{HTTP} giunge fino ad al metodo \emph{ready} della classe \emph{BridgeController} che a sua volta controllerà la presenza dell'albero tramite \emph{AlgorithmService}. Al termine ritorna in \emph{output} una risposta \emph{HTTP} contenente un oggetto \emph{Json}.
-
+La richiesta \emph{HTTP} giunge fino ad al metodo \emph{ready} della classe \emph{BridgeController}, mediante il \emph{router}. Questo metodo controllerà la presenza dell'albero tramite \emph{AlgorithmService}. Al termine ritorna in \emph{output} una risposta \emph{HTTP}, contenente un oggetto \emph{Json}.
+\newpage
 \subsection{Inserimento behavior}
-Per istruire l'algoritmo di selezione è necessario fornire dei dati per l'apprendimento. Ho implementato una procedura di inserimento dei comportamenti mediante questa chiamata dell'interfaccia \emph{REST}:
+Per istruire l'algoritmo di selezione, è necessario fornire dei dati per l'apprendimento. Ho implementato una procedura di inserimento dei comportamenti, mediante questa chiamata dell'interfaccia \emph{REST}:
 \def\arraystretch{1.5}
 \begin{longtable}{|p{2.5cm}|p{5cm}|l|}
 \hline
@@ -355,11 +355,11 @@ POST	&	/tres/behavior	 \\\hline
 \caption{Diagramma di sequenza: inserimento comportamento.}
 \label{fig:seq-inserimentobeh}
 \end{figure}
-Da Bdrim arriva una richiesta \emph{HTTP POST} che comprende un \emph{Json} contenente un \emph{Behavior}. Il \emph{router} di Play accoglie la richiesta che la reindirizza al metodo della classe \emph{BridgeController insertBehavior}. Il flusso continua con la validazione del \emph{Json} e successivamente inserisce il comportamento invocando il metodo \emph{save} della classe \emph{BehaviorDAO}. 
+Da Bdrim arriva una richiesta \emph{HTTP POST}, che comprende un \emph{Json} contenente un \emph{Behavior}. Il \emph{router} di Play accoglie la richiesta, che la reindirizza al metodo della classe \emph{BridgeController insertBehavior}. Il flusso continua con la validazione del \emph{Json}. Successivamente il metodo inserisce il comportamento, invocando il metodo \emph{save} della classe \emph{BehaviorDAO}. 
 
 
 \subsection{Raccomandazione}
-Una volta raccolti almeno 100 \emph{Behavior} e che l'algoritmo ha generato l'albero, il sistema è in grado di fornire una raccomandazione. Ho implementato la procedura di raccomandazione mediante questa chiamata dell'interfaccia \emph{REST}:
+Una volta raccolti almeno 100 \emph{Behavior} e che l'algoritmo ha generato l'albero, il sistema è in grado di fornire una raccomandazione. Ho implementato la procedura di raccomandazione, mediante questa chiamata dell'interfaccia \emph{REST}:
 \def\arraystretch{1.5}
 \begin{longtable}{|p{2.5cm}|p{5cm}|l|}
 \hline
@@ -370,9 +370,9 @@ POST	&	/tres/recommendation	 \\\hline
 \centering
 \includegraphics[scale=0.42]{immagini/DSracommandazione}
 \caption{Diagramma di sequenza: raccomandazione.}
-\label{fig:seq-inserimentobeh}
+\label{fig:get-recommendation}
 \end{figure}
-Da Bdrim arriva una richiesta \emph{HTTP POST} che comprende un \emph{Json} contenente le interazioni dell'utente. Il \emph{router} convoglia la richiesta al metodo \emph{recommendation} di \emph{BridgeController}. Il flusso procede con la validazione del \emph{Json} ricevuto che estrapola una lista di interazioni dell'utente. Questa lista viene elaborata dall'albero tramite la chiamata al metodo \emph{getRecommendation} di \emph{AlgorithmService} che ritornerà le probabilità delle raccomandazioni. 
+Da Bdrim arriva una richiesta \emph{HTTP POST}, che comprende un \emph{Json} contenente le interazioni dell'utente. Il \emph{router} convoglia la richiesta al metodo \emph{recommendation}, di \emph{BridgeController}. Il flusso procede con la validazione del \emph{Json} ricevuto, che estrapola una lista di interazioni dell'utente. Questa lista viene elaborata dall'albero, tramite la chiamata al metodo \emph{getRecommendation} di \emph{AlgorithmService}, che ritornerà le probabilità delle raccomandazioni. 
 %**************************************************************
 
 
@@ -380,36 +380,37 @@ Da Bdrim arriva una richiesta \emph{HTTP POST} che comprende un \emph{Json} cont
 
 %**************************************************************
 \newpage
-\section{Verifica e Validazione}
-Questa sezione descrive l'attività di verifica e validazione svolta durante la realizzazione di Tres, indicando gli strumenti utilizzati, le metriche utilizzate e infine un resoconto finale dei test. L'attività di verifica mi ha permesso di individuare prontamente errori di codifica e ridurre i tempi di sviluppo. Ho cercato di automatizzare il più possibile questa attività per focalizzarmi nello sviluppo. In primis ho effettuato dei test di unità per le componenti più complesse e successivamente ho verificato la loro integrazione. Per motivi di tempo non ho potuto realizzare tutti test di unità e di integrazione per tutte le componenti, mi sono focalizzato sulle componenti principali. 
+\section{Verifica e Validazione}%procedere da qui
+Questa sezione descrive l'attività di verifica e validazione svolta durante la realizzazione di Tres. Sono elencati gli strumenti utilizzati, le metriche utilizzate e infine un resoconto finale dei test. L'attività di verifica, mi ha permesso di individuare prontamente errori di codifica e ridurre i tempi di sviluppo. Ho cercato di automatizzare il più possibile questa attività, per focalizzarmi nello sviluppo. In primis, ho effettuato dei test di unità per le componenti più complesse. Successivamente ho verificato la loro integrazione. Per motivi di tempo, non ho potuto realizzare tutti i test di unità e di integrazione. Mi sono, quindi, focalizzato sulle componenti principali. 
 \subsubsection{Strumenti}
-Durante lo sviluppo ho utilizzato il più possibile degli automatismi che mi permettessero di fare analisi statica e dinamica risparmiando più tempo possibile. Ho adottato i seguenti strumenti:
+Durante lo sviluppo, ho utilizzato il più possibile degli automatismi. Risparmiando più tempo possibile durante l'analisi statica e dinamica . Ho adottato i seguenti strumenti:
 \begin{itemize}
-\item \textbf{Intellij IDEA:} questo \gls{ide} fornisce funzionalità per identificare errori di programmazione come ad esempio sintassi errata, incompatibilità tra tipi e variabili non definite. Fornisce la percentuale di documentazione dell'intero progetto.
-\item \textbf{TravisCI:} è uno strumento che fornisce un automatismo per la compilazione e l'esecuzione dei \emph{test} del progetto. Se la compilazione o almeno un test fallisce, invia una notifica via \emph{email} con la possibilità di consultare il \emph{log}.
+\item \textbf{Intellij IDEA:} questo \gls{ide} fornisce funzionalità per identificare errori di programmazione. Come ad esempio sintassi errata, incompatibilità tra tipi e variabili non definite. Fornisce la percentuale di documentazione dell'intero progetto.
+\item \textbf{TravisCI:} è uno strumento che fornisce un automatismo, per la compilazione e l'esecuzione dei \emph{test} del progetto. Se la compilazione o almeno un test fallisce, invia una notifica via \emph{email}, con la possibilità di consultare il \emph{log}.
 \item \textbf{Codecov:} questo strumento fornisce la percentuale delle linee di codice coperte durante i \emph{test}.
-\item \textbf{Specs2:} è una libreria di \emph{testing} fornita direttamente da Play Framework. Mi ha permesso di testare l'intera applicazione anche con le chiamate HTTP.
+\item \textbf{Specs2:} è una libreria di \emph{testing}, fornita direttamente da Play Framework. Mi ha permesso di testare l'intera applicazione, anche con le chiamate HTTP.
 \end{itemize}
 \newpage
 \subsubsection{Metriche adottate}
 Per la realizzazione di Tres ho adottato le seguenti metriche:
 \begin{itemize}
-\item \textbf{Attributi per classe:}  un numero troppo elevato di attributi potrebbe indicare la necessità di suddividere la classe in una gerarchia. Ho fissato un \emph{range} ottimale i seguenti valori, un minimo 1 fino ad un massimo di 8;
-\item \textbf{Complessità ciclomatica:} è un indice utilizzato per misurare la complessità di funzioni, metodi, moduli e classi di un programma. Misura direttamente il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo. Per questa metrica ho fissato un \textit{range} ottimale da un minimo di 1 fino ad un massimo di 10;
+\item \textbf{Attributi per classe:} un numero troppo elevato di attributi, potrebbe indicare la necessità di suddividere la classe in una gerarchia. Ho fissato un \emph{range} ottimale con i seguenti valori: un minimo 1 fino ad un massimo di 8;
+\item \textbf{Complessità ciclomatica:} è un indice utilizzato per misurare la complessità di: funzioni, metodi, moduli e classi di un programma. Misura direttamente il numero di cammini linearmente indipendenti, attraverso il grafo di controllo di flusso. I nodi del grafo corrispondono a gruppi indivisibili di istruzioni, mentre gli archi connettono due nodi, se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo gruppo. Per questa metrica ho fissato un \textit{range} ottimale, da un minimo di 1 fino ad un massimo di 10;
 \item \textbf{Copertura dei commenti:} è indice della percentuale di classi e metodi corredati di commenti. Ho fissato un range ottimale da 80\% a 100\%;
-\item \textbf{Copertura dei test:} è una metrica utilizzata per misurare l'efficacia del collaudo. Si utilizza un indice che tiene traccia di quante volte è stata eseguita ogni istruzione durante il \emph{testing}, le istruzioni eseguite almeno una volta sono dette "coperte". L'obiettivo è coprire il maggior numero possibile di istruzioni, in modo da avere una minore quantità di errore. Per questa metrica ho fissato un valore ottimale minimo di 70\%.
+\item \textbf{Copertura dei test:} è una metrica utilizzata per misurare l'efficacia del collaudo. Si utilizza un indice, che tiene traccia di quante volte è stata eseguita ogni istruzione, durante il \emph{testing}. Le istruzioni eseguite almeno una volta sono dette "coperte". L'obiettivo è coprire il maggior numero possibile di istruzioni. In modo da avere una minore quantità di errore. Per questa metrica ho fissato un valore ottimale minimo di 70\%.
 \end{itemize}
 \subsection{Resoconto risultati}
 \subsubsection{Metriche misurate}
 Qui di seguito sono riportate le metriche software misurate:
 \begin{itemize}
-\item \textbf{Complessità ciclomatica:} per il calcolo della complessità ciclomatica ho utilizzato Sbt, al suo interno è disponibile il \emph{tool} styleCheck. Questo strumento segnala con un \emph{warning} se la complessità supera il valore 10. Il \emph{tool} ha restituito esito positivo e non ha segnalato alcun \emph{warning};
+\item \textbf{Complessità ciclomatica:} per il calcolo della complessità ciclomatica ho utilizzato Sbt, al suo interno è disponibile il \emph{tool} styleCheck. Questo strumento segnala, con un \emph{warning}, se la complessità supera il valore 10. Il \emph{tool} ha restituito esito positivo e non ha segnalato alcun \emph{warning};
 \item \textbf{Attributi per classe:} ho rilevato per questa metrica come valore medio 2, mentre come valore massimo ho rilevato 4;
 \item \textbf{Copertura commenti:} il valore di copertura è pari al 100\%;
 \item \textbf{Copertura dei test:} il valore di copertura dei \emph{test} è del 73\%.
 \end{itemize}
+\newpage
 \subsubsection{Test di unità e di integrazione}
-I \emph{test} di unità vengono svolti incrementalmente durante la codifica di ogni componente. I primi \emph{test} che ho effettuato riguardano principalmente le componenti base del \emph{models} e quelle responsabili delle iterazioni con il \emph{database}. Successivamente sono passato al \emph{testing} della parte di algoritmica presente nel \emph{package algorithm}. Per i \emph{test} di unità ho evitato di utilizzare \emph{mock} e \emph{stub} per le componenti base presenti in \emph{commons}, in quanto ritenevo quelle componenti molto elementari e che non avrebbero introdotto errori o comportamenti non attesi. Per l'integrazione delle componenti ho seguito un approccio \emph{bottom-up}, questi mi ha aiutato a ridurre i tempi di \emph{testing} evitando sprechi di risorse utilizzando \emph{mock} e {stub}. Ho focalizzato i \emph{test} di integrazione nella parte di algoritmica e in quelle di interazione col \emph{database} perché l'incertezza del comportamento di quelle componenti era altissima. Al netto dell'attività di \emph{testing} i test di unità eseguiti ammontano ad un totale di 10 di cui 10 hanno esito positivo, mentre per quanto riguarda l'integrazione delle componenti sono stati eseguiti un totale di 3 \emph{test} di integrazione di cui 3 hanno avuto esito positivo.
+I \emph{test} di unità vengono svolti incrementalmente, durante la codifica di ogni componente. I primi \emph{test} che ho effettuato, riguardano principalmente le componenti base del \emph{models} e quelle responsabili delle iterazioni con il \emph{database}. Successivamente sono passato al \emph{testing} della parte di algoritmica, presente nel \emph{package algorithm}. Per i \emph{test} di unità, ho evitato di utilizzare \emph{mock} e \emph{stub} per le componenti base presenti in \emph{commons}. In quanto ritenevo quelle componenti, molto elementari e che non avrebbero introdotto errori o comportamenti non attesi. Per l'integrazione delle componenti, ho seguito un approccio \emph{bottom-up}. Questo mi ha aiutato a ridurre i tempi di \emph{testing}, evitando sprechi di risorse utilizzando \emph{mock} e {stub}. Ho focalizzato i \emph{test} di integrazione nella parte di algoritmica e in quelle di interazione col \emph{database}. Perché l'incertezza del comportamento di quelle componenti era altissima. Al netto dell'attività di \emph{testing}, i test di unità eseguiti ammontano ad un totale di 10, di cui 10 hanno esito positivo. Per quanto riguarda l'integrazione delle componenti, sono stati eseguiti un totale di 3 \emph{test} di integrazione, di cui 3 hanno avuto esito positivo.
 
 %\subsubsection{Test di unità}
 %Qui di seguito sono riportati tutti i \emph{test} di unità eseguiti e il loro relativo esito:
@@ -441,7 +442,7 @@ I \emph{test} di unità vengono svolti incrementalmente durante la codifica di o
 %\caption{Tabella dei \emph{test} di integrazione}
 %\end{longtable}
 \subsubsection{Test di sistema}
-Ho effettuato alcuni \emph{test} di sistema inerenti alle funzionalità di inserimento dati, calcolo di una raccomandazione e infine il calcolo probabilità.
+Ho effettuato alcuni \emph{test} di sistema inerenti alle funzionalità di: inserimento dati, calcolo di una raccomandazione e infine calcolo probabilità.
 \begin{itemize}
 \item \textbf{Inserimento dati:} viene verificato il corretto comportamento del sistema alla richiesta di inserimento dati;
 \item \textbf{Calcolo raccomandazioni:} viene verificato il calcolo della raccomandazione da fornire;
@@ -463,8 +464,7 @@ Questa sezione descrive il funzionamento del sistema realizzato durante lo stage
 \label{fig:flux}
 \end{figure}
 \newpage
-In fase di \emph{startup} il sistema non possiede nessun dato, e quindi non è in grado di fornire raccomandazioni.
-Il \emph{client} deve dunque verificare lo stato di operatività del sistema attraverso una chiamata \emph{HTTP} a:\\
+In fase di \emph{startup} il sistema non possiede nessun dato. Esso quindi non è in grado di fornire raccomandazioni. Il \emph{client} deve dunque verificare lo stato di operatività del sistema, attraverso una chiamata \emph{HTTP} a:\\
 \begin{center}
 GET    /tres/ready
 \end{center}
@@ -474,7 +474,7 @@ Il client ottiene così un oggetto Json simile al seguente.
   "ready":false
 }
 \end{lstlisting}
-La risposta \emph{HTTP} ritorna un oggetto \emph{Json} contenente un \emph{booleano} che indica l'operatività del modulo. L'operatività dipende essenzialmente dal numero di comportamenti utente inseriti nel sistema, quindi se non è operativo si continua con la procedura di inserimento dei comportamenti tramite la chiamata:
+La risposta \emph{HTTP} ritorna un oggetto \emph{Json} contenente un \emph{booleano}, che indica l'operatività del modulo. L'operatività dipende essenzialmente dal numero di comportamenti utente inseriti nel sistema. Se il modulo non è operativo, si continua con la procedura di inserimento dei comportamenti tramite la chiamata:
 \begin{center}
 POST    /tres/behavior
 \end{center}
@@ -507,12 +507,12 @@ L'oggetto da inviare tramite questa chiamata deve contenere un \emph{Json} simil
   ]
 }
 \end{lstlisting}
-Un comportamento si registra solamente quando le azioni dell'utente hanno prodotto un risultato all'interno del sito (come ad esempio un acquisto nel caso di un \emph{e-commerce}). Una volta generato l'albero, Tres è in grado di fornire raccomandazioni agli utenti e quindi il \emph{client} può iniziare la procedura di per richiedere una raccomandazione. Il \emph{client} innanzitutto deve richiedere a Tres con quale argomento interrogare l'utente mediante la seguente chiamata \emph{HTTP}. 
+Un comportamento si registra solamente quando le azioni dell'utente hanno prodotto un risultato all'interno del sito (come ad esempio un acquisto nel caso di un \emph{e-commerce}). Una volta generato l'albero, Tres è in grado di fornire raccomandazioni agli utenti. Il \emph{client}, quindi, può iniziare la procedura per richiedere una raccomandazione. Esso, innanzitutto, deve richiedere a Tres quale argomento con cui interrogare l'utente. Mediante la seguente chiamata \emph{HTTP} è possibile richiedere l'argomento: 
 \begin{center}
 POST    /tres/answer
 \end{center}
 \newpage
-La chiamata deve comprendere un oggetto \emph{Json} che contiene le interazioni che l'utente ha già svolto.
+La chiamata deve comprendere un oggetto \emph{Json}, che contiene le interazioni che l'utente ha già svolto.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "interactions":[
@@ -531,17 +531,17 @@ La chiamata deve comprendere un oggetto \emph{Json} che contiene le interazioni 
   ]
 }
 \end{lstlisting}
-Questa chiamata fornisce come risposta il prossimo \emph{WidgetTag} da utilizzare per interrogare l'utente del sito come il seguente oggetto \emph{Json}.
+Questa chiamata fornisce come risposta il prossimo \emph{WidgetTag} da utilizzare, per interrogare l'utente del sito come il seguente oggetto \emph{Json}.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   name: "Income"
 }
 \end{lstlisting}
-L'utente va ad interagire con il \emph{WidgetTag} con cui lo interroghiamo, dopodiché il \emph{client} aggiunge l'interazione alle interazioni precedentemente salvate. Il \emph{client} deve continuare a reiterare questa chiamata aggiungendo le interazioni finché Tres continua a fornire dei \emph{WidgetTag} per interrogare l'utente. Se Tres non fornisce altri \emph{WidgetTag} significa che la classificazione del comportamento è terminata ed è possibile per il \emph{client} procedere con la richiesta della raccomandazione. La chiamata \emph{HTTP} da effettuare è la seguente.
+L'utente va ad interagire con il \emph{WidgetTag} con cui lo interroghiamo. Dopodiché il \emph{client} aggiunge l'interazione alle interazioni precedentemente salvate. Il \emph{client} deve continuare a reiterare questa chiamata, aggiungendo le interazioni. Finché Tres continua a fornire dei \emph{WidgetTag}, per interrogare l'utente. Se Tres non ne fornisce altri, significa che la classificazione del comportamento è terminata. E' quindi possibile per il \emph{client}, procedere con la richiesta della raccomandazione. La chiamata \emph{HTTP} da effettuare è la seguente:
 \begin{center}
 POST    /tres/recommendation
 \end{center}
-Nella chiamata dev'essere presente il \emph{Json} contenente le interazioni dell'utente. La risposta di Tres comprende un oggetto \emph{Json} dove vengono indicate le percentuali dei prodotti/oggetti/post da raccomandare all'utente.
+Nella chiamata dev'essere presente il \emph{Json} contenente le interazioni dell'utente. La risposta di Tres comprende un oggetto \emph{Json}, dove vengono indicate le percentuali dei prodotti/oggetti/post da raccomandare all'utente.
 \begin{lstlisting}[language=json,firstnumber=1]
 {
   "items":[
@@ -561,5 +561,5 @@ Nella chiamata dev'essere presente il \emph{Json} contenente le interazioni dell
   ]
 }
 \end{lstlisting}
-Quando il comportamento dell'utente ha prodotto un risultato il \emph{client} inserisce il suo comportamento nel sistema e termina la procedura.
+Quando il comportamento dell'utente ha prodotto un risultato, il \emph{client} inserisce il suo comportamento nel sistema e termina la procedura.
 %**************************************************************

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  29 MAR 2016 23:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  30 MAR 2016 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,11 +1189,7 @@ Package biblatex Info: ... file 'italian.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-) (./tesi.aux
-
-LaTeX Warning: Label `fig:seq-inserimentobeh' multiply defined.
-
-)
+) (./tesi.aux)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
@@ -1222,7 +1218,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
@@ -1683,12 +1679,11 @@ File: immagini/DScheckstate.png Graphic file (type png)
 <use immagini/DScheckstate.png>
 Package pdftex.def Info: immagini/DScheckstate.png used on input line 338.
 (pdftex.def)             Requested size: 235.65582pt x 163.79375pt.
-
+ [34 <./immagini/DScheckstate.png>]
 Underfull \vbox (badness 10000) detected at line 351
  []
 
-[34 <./immagini/DScheckstate.png>]
-<immagini/DSinsertBeh.png, id=559, 523.9575pt x 380.92313pt>
+<immagini/DSinsertBeh.png, id=558, 523.9575pt x 380.92313pt>
 File: immagini/DSinsertBeh.png Graphic file (type png)
 
 <use immagini/DSinsertBeh.png>
@@ -1698,7 +1693,7 @@ Package pdftex.def Info: immagini/DSinsertBeh.png used on input line 354.
 Underfull \vbox (badness 10000) detected at line 368
  []
 
-<immagini/DSracommandazione.png, id=560, 612.78937pt x 380.92313pt>
+<immagini/DSracommandazione.png, id=559, 612.78937pt x 380.92313pt>
 File: immagini/DSracommandazione.png Graphic file (type png)
 
 <use immagini/DSracommandazione.png>
@@ -1714,10 +1709,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: immagini/flux.png Graphic file (type png)
 
 <use immagini/flux.png>
-Package pdftex.def Info: immagini/flux.png used on input line 461.
+Package pdftex.def Info: immagini/flux.png used on input line 462.
 (pdftex.def)             Requested size: 171.57985pt x 415.24855pt.
  [39 <./immagini/flux.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
@@ -1735,7 +1730,7 @@ Package microtype Info: Loading generic settings for font family
 
 ]
 Capitolo 4.
-<immagini/graficorequisiti.png, id=678, 455.45157pt x 255.95625pt>
+<immagini/graficorequisiti.png, id=679, 455.45157pt x 255.95625pt>
 File: immagini/graficorequisiti.png Graphic file (type png)
 
 <use immagini/graficorequisiti.png>
@@ -1755,11 +1750,12 @@ LaTeX Warning: Citation 'http://lampwww.epfl.ch/~odersky/' on page 44 undefined
 LaTeX Warning: Citation 'https://www.udemy.com/orientdb-getting-started/' on pa
 ge 45 undefined on input line 45.
 
-) [45] [46] (./tesi.gls [47
+[45]) [46] (./tesi.gls [47
 
 
 
-]) (./tesi.acr [48]) (./inizio-fine/bibliografia.tex [49
+]) (./tesi.acr [48]) (./inizio-fine/bibliografia.tex
+[49
 
 
 ] [50
@@ -1784,9 +1780,6 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 128.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                tesi
 (biblatex)                and rerun LaTeX afterwards.
@@ -1796,10 +1789,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24120 strings out of 493085
- 381190 string characters out of 6136916
- 992650 words of memory out of 5000000
- 26556 multiletter control sequences out of 15000+600000
+ 24121 strings out of 493085
+ 381217 string characters out of 6136916
+ 992672 words of memory out of 5000000
+ 26557 multiletter control sequences out of 15000+600000
  37763 words of font info for 163 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,8n,122p,1962b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1824,10 +1817,10 @@ re/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1
 i0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt0800.pfb>
-Output written on tesi.pdf (61 pages, 4929042 bytes).
+Output written on tesi.pdf (61 pages, 4929262 bytes).
 PDF statistics:
- 1122 PDF objects out of 1200 (max. 8388607)
- 953 compressed objects within 10 object streams
+ 1123 PDF objects out of 1200 (max. 8388607)
+ 954 compressed objects within 10 object streams
  297 named destinations out of 1000 (max. 500000)
  41569 words of extra memory for PDF output out of 42996 (max. 10000000)
 
