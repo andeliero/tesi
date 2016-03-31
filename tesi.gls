@@ -28,6 +28,9 @@
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossentry{mvcg}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossentry{restg}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossentry{umlg}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{49}}}%

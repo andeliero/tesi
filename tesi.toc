@@ -16,7 +16,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Linguaggi di programmazione}{3}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\gls {framework} e \gls {cms}}{3}{section*.15}
+\contentsline {subsubsection}{Framework e CMS}{3}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Database}{4}{section*.16}
 \defcounter {refsection}{0}\relax 

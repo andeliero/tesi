@@ -145,7 +145,7 @@ Inoltre, se previsto, ho specificato estensione e lo scenario alternativo.
 \end{figure}
 \begin{itemize}
 \item \textbf{Attori:} Bdrim
-\item \textbf{Scopo e descrizione:} Questo caso d'uso illustra le funzionalità offerte dal sistema a Bdrim. Bdrim ha la possibilità di effettuare delle richieste \emph{REST} al sistema;
+\item \textbf{Scopo e descrizione:} Questo caso d'uso illustra le funzionalità offerte dal sistema a Bdrim. Bdrim ha la possibilità di effettuare delle richieste \gls{rest} al sistema;
 \item \textbf{Pre-condizione:} Il \emph{server} è stato avviato e Tres è stato attivato.
 \item \textbf{Flusso principale degli eventi:}
 \begin{itemize}
@@ -184,7 +184,7 @@ Il contesto di utilizzo dell'applicativo è la piattaforma di Bdrim. Questa piat
 \caption{Visione generale dell'architettura}
 \label{fig:arch-gen}
 \end{figure}
-Le due componenti sono indipendenti tra loro e comunicano utilizzando una architettura \emph{REST}.
+Le due componenti sono indipendenti tra loro e comunicano utilizzando una architettura \gls{rest}.
 \newpage
 \subsection{Architettura}
 Per la realizzazione di Tres, ho seguito un \emph{design} architetturale \gls{mvc}. Quindi i \emph{package} principali sono: \emph{model}, \emph{view} e \emph{controller}. Attualmente il \emph{package} \emph{views} non viene utilizzato. Esso tornerà utile in eventuali sviluppi successivi, per la creazione di una interfaccia di amministrazione per Bdrim o altre eventuali funzionalità. Qui di seguito illustro la visione generale e successivamente le componenti del sistema.  
@@ -326,7 +326,7 @@ Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di
 \section{Progettazione di dettaglio}
 La progettazione di dettaglio, con la metodologia \emph{agile}, avviene di pari passo durante la codifica, il che è rischioso perché introduce molti errori di codifica. E' necessario avere una forte conoscenza del dominio tecnico, per poter procedere e non cadere nel modello \emph{code and fix}. Rispetto alle metodologie tradizionali, il focus si sposta nella codifica anziché nella progettazione. Quindi le ore risparmiate della progettazione di dettaglio, sono state reimpiegate nel correggere eventuali errori di codifica. Riporto qui di seguito i diagrammi di sequenza \emph{UML} più significativi:
 \subsection{Controllo stato}
-In fase di \emph{startup} il sistema non possiede nessun dato, quindi non è in grado di fornire raccomandazioni. Mediante questa chiamata dell'interfaccia \emph{REST}, è possibile verificare lo stato operativo del modulo:\\
+In fase di \emph{startup} il sistema non possiede nessun dato, quindi non è in grado di fornire raccomandazioni. Mediante questa chiamata dell'interfaccia \gls{rest}, è possibile verificare lo stato operativo del modulo:\\
 \def\arraystretch{1.5}
 \begin{longtable}{|p{2.5cm}|p{5cm}|l|}
 \hline
@@ -342,7 +342,7 @@ GET		&	/tres/ready		 \\\hline
 La richiesta \emph{HTTP} giunge fino ad al metodo \emph{ready} della classe \emph{BridgeController}, mediante il \emph{router}. Questo metodo controllerà la presenza dell'albero tramite \emph{AlgorithmService}. Al termine ritorna in \emph{output} una risposta \emph{HTTP}, contenente un oggetto \gls{json}.
 \newpage
 \subsection{Inserimento behavior}
-Per istruire l'algoritmo di selezione, è necessario fornire dei dati per l'apprendimento. Ho implementato una procedura di inserimento dei comportamenti, mediante questa chiamata dell'interfaccia \emph{REST}:
+Per istruire l'algoritmo di selezione, è necessario fornire dei dati per l'apprendimento. Ho implementato una procedura di inserimento dei comportamenti, mediante questa chiamata dell'interfaccia \gls{rest}:
 \def\arraystretch{1.5}
 \begin{longtable}{|p{2.5cm}|p{5cm}|l|}
 \hline

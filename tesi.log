@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  30 MAR 2016 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  31 MAR 2016 00:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1409,7 +1409,7 @@ File: immagini/tecnologie.png Graphic file (type png)
 Package pdftex.def Info: immagini/tecnologie.png used on input line 60.
 (pdftex.def)             Requested size: 359.74939pt x 269.81204pt.
  [2 <./immagini/amsi.jpg>] [3 <./immagini/tecnologie.png>] [4] <immagini/agileo
-.png, id=309, 451.6875pt x 415.5525pt>
+.png, id=307, 451.6875pt x 415.5525pt>
 File: immagini/agileo.png Graphic file (type png)
 
 <use immagini/agileo.png>
@@ -1420,7 +1420,7 @@ Package pdftex.def Info: immagini/agileo.png used on input line 89.
 LaTeX Warning: Citation 'http://www.agilemanifesto.org/' on page 5 undefined on
  input line 94.
 
-[5 <./immagini/agileo.png>] <immagini/scrum.png, id=320, 803.0pt x 401.5pt>
+[5 <./immagini/agileo.png>] <immagini/scrum.png, id=318, 803.0pt x 401.5pt>
 File: immagini/scrum.png Graphic file (type png)
 
 <use immagini/scrum.png>
@@ -1439,7 +1439,7 @@ line 135.
 LaTeX Warning: Citation 'https://www.atlassian.com/software/jira' on page 7 und
 efined on input line 135.
 
-<immagini/jira.png, id=329, 923.45pt x 451.6875pt>
+<immagini/jira.png, id=327, 923.45pt x 451.6875pt>
 File: immagini/jira.png Graphic file (type png)
  <use immagini/jira.png>
 Package pdftex.def Info: immagini/jira.png used on input line 144.
@@ -1454,7 +1454,7 @@ LaTeX Warning: Citation 'https://git-scm.com/' on page 8 undefined on input lin
 e 159.
 
 [8 <./immagini/jira.png (PNG copy)>]
-<immagini/strumenti.png, id=347, 1027.84pt x 770.88pt>
+<immagini/strumenti.png, id=345, 1027.84pt x 770.88pt>
 File: immagini/strumenti.png Graphic file (type png)
 
 <use immagini/strumenti.png>
@@ -1469,7 +1469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[11] <immagini/tree.png, id=362, 942.52126pt x 608.2725pt>
+[11] <immagini/tree.png, id=360, 942.52126pt x 608.2725pt>
 File: immagini/tree.png Graphic file (type png)
 
 <use immagini/tree.png>
@@ -1480,7 +1480,7 @@ Package pdftex.def Info: immagini/tree.png used on input line 31.
 LaTeX Warning: Citation 'https://github.com/' on page 13 undefined on input lin
 e 67.
 
-<immagini/travis.png, id=370, 2330.7075pt x 1454.43375pt>
+<immagini/travis.png, id=368, 2330.7075pt x 1454.43375pt>
 File: immagini/travis.png Graphic file (type png)
 
 <use immagini/travis.png>
@@ -1501,7 +1501,7 @@ LaTeX Warning: Citation 'http://www.scala-lang.org/' on page 14 undefined on in
 put line 92.
 
 [14 <./immagini/travis.png>]
-<immagini/play-arch.png, id=390, 563.10374pt x 578.16pt>
+<immagini/play-arch.png, id=388, 563.10374pt x 578.16pt>
 File: immagini/play-arch.png Graphic file (type png)
 
 <use immagini/play-arch.png>
@@ -1512,13 +1512,13 @@ Package pdftex.def Info: immagini/play-arch.png used on input line 97.
 LaTeX Warning: Citation 'http://orientdb.com/' on page 16 undefined on input li
 ne 112.
 
-<immagini/graph_orientdb.png, id=407, 429.10312pt x 396.7322pt>
+[16] <immagini/graph_orientdb.png, id=413, 429.10312pt x 396.7322pt>
 File: immagini/graph_orientdb.png Graphic file (type png)
 
 <use immagini/graph_orientdb.png>
 Package pdftex.def Info: immagini/graph_orientdb.png used on input line 126.
 (pdftex.def)             Requested size: 257.46385pt x 238.04114pt.
- [16]) (./capitoli/capitolo-3.tex [17 <./immagini/graph_orientdb.png>] [18
+) (./capitoli/capitolo-3.tex [17 <./immagini/graph_orientdb.png>] [18
 
 ]
 Capitolo 3.
@@ -1571,7 +1571,7 @@ Package pdftex.def Info: immagini/UC1a.png used on input line 142.
 (pdftex.def)             Requested size: 297.52452pt x 219.1121pt.
 
 [24 <./immagini/UC1a.png>]
-<immagini/architetturagenerale.png, id=473, 617.30624pt x 581.17125pt>
+<immagini/architetturagenerale.png, id=474, 617.30624pt x 581.17125pt>
 File: immagini/architetturagenerale.png Graphic file (type png)
 
 <use immagini/architetturagenerale.png>
@@ -1579,28 +1579,28 @@ Package pdftex.def Info: immagini/architetturagenerale.png used on input line 1
 83.
 (pdftex.def)             Requested size: 308.65236pt x 290.58492pt.
  [25 <./immagini/architetturagenerale.png>] <immagini/architetturamvc.png, id=4
-80, 1019.81pt x 809.0225pt>
+82, 1019.81pt x 809.0225pt>
 File: immagini/architetturamvc.png Graphic file (type png)
 
 <use immagini/architetturamvc.png>
 Package pdftex.def Info: immagini/architetturamvc.png used on input line 193.
 (pdftex.def)             Requested size: 356.93884pt x 283.16212pt.
  [26 <./immagini/architetturamvc.png>]
-<immagini/controllers.png, id=486, 796.9775pt x 329.23pt>
+<immagini/controllers.png, id=488, 796.9775pt x 329.23pt>
 File: immagini/controllers.png Graphic file (type png)
 
 <use immagini/controllers.png>
 Package pdftex.def Info: immagini/controllers.png used on input line 202.
 (pdftex.def)             Requested size: 278.94629pt x 115.23222pt.
 
-<immagini/models.png, id=487, 1106.1325pt x 578.16pt>
+<immagini/models.png, id=489, 1106.1325pt x 578.16pt>
 File: immagini/models.png Graphic file (type png)
 
 <use immagini/models.png>
 Package pdftex.def Info: immagini/models.png used on input line 210.
 (pdftex.def)             Requested size: 331.84232pt x 173.44933pt.
 
-<immagini/commons.png, id=489, 627.34375pt x 574.145pt>
+<immagini/commons.png, id=491, 627.34375pt x 574.145pt>
 File: immagini/commons.png Graphic file (type png)
 
 <use immagini/commons.png>
@@ -1615,21 +1615,21 @@ defined on input line 228.
 LaTeX Warning: Citation 'http://tinkerpop.incubator.apache.org/' on page 28 und
 efined on input line 228.
 
-<immagini/storage.png, id=505, 812.03375pt x 603.25375pt>
+<immagini/storage.png, id=507, 812.03375pt x 603.25375pt>
 File: immagini/storage.png Graphic file (type png)
 
 <use immagini/storage.png>
 Package pdftex.def Info: immagini/storage.png used on input line 231.
 (pdftex.def)             Requested size: 227.36789pt x 168.9099pt.
  [28 <./immagini/commons.png> <./immagini/storage.png>] <immagini/algorithm.png
-, id=516, 876.27374pt x 559.08875pt>
+, id=518, 876.27374pt x 559.08875pt>
 File: immagini/algorithm.png Graphic file (type png)
 
 <use immagini/algorithm.png>
 Package pdftex.def Info: immagini/algorithm.png used on input line 240.
 (pdftex.def)             Requested size: 262.88414pt x 167.7279pt.
  [29 <./immagini/algorithm.png>]
-<immagini/databaseschema.png, id=525, 781.92125pt x 139.52126pt>
+<immagini/databaseschema.png, id=527, 781.92125pt x 139.52126pt>
 File: immagini/databaseschema.png Graphic file (type png)
 
 <use immagini/databaseschema.png>
@@ -1641,7 +1641,7 @@ Overfull \hbox (18.95967pt too wide) in paragraph at lines 255--256
  []
 
 [30 <./immagini/databaseschema.png>]
-<immagini/mvc.png, id=532, 980.66376pt x 655.44875pt>
+<immagini/mvc.png, id=534, 980.66376pt x 655.44875pt>
 File: immagini/mvc.png Graphic file (type png)
  <use immagini/mvc.png>
 Package pdftex.def Info: immagini/mvc.png used on input line 278.
@@ -1658,7 +1658,7 @@ File: immagini/algorithm.png Graphic file (type png)
 Package pdftex.def Info: immagini/algorithm.png used on input line 300.
 (pdftex.def)             Requested size: 262.88414pt x 167.7279pt.
  [32]
-<immagini/singleton.png, id=551, 412.54124pt x 280.79906pt>
+<immagini/singleton.png, id=553, 412.54124pt x 280.79906pt>
 File: immagini/singleton.png Graphic file (type png)
 
 <use immagini/singleton.png>
@@ -1673,7 +1673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--331
 Underfull \vbox (badness 10000) detected at line 335
  []
 
-<immagini/DScheckstate.png, id=559, 548.0475pt x 380.92313pt>
+<immagini/DScheckstate.png, id=562, 548.0475pt x 380.92313pt>
 File: immagini/DScheckstate.png Graphic file (type png)
 
 <use immagini/DScheckstate.png>
@@ -1683,7 +1683,7 @@ Package pdftex.def Info: immagini/DScheckstate.png used on input line 338.
 Underfull \vbox (badness 10000) detected at line 351
  []
 
-<immagini/DSinsertBeh.png, id=568, 523.9575pt x 380.92313pt>
+<immagini/DSinsertBeh.png, id=572, 523.9575pt x 380.92313pt>
 File: immagini/DSinsertBeh.png Graphic file (type png)
 
 <use immagini/DSinsertBeh.png>
@@ -1693,7 +1693,7 @@ Package pdftex.def Info: immagini/DSinsertBeh.png used on input line 354.
 Underfull \vbox (badness 10000) detected at line 368
  []
 
-<immagini/DSracommandazione.png, id=571, 612.78937pt x 380.92313pt>
+<immagini/DSracommandazione.png, id=575, 612.78937pt x 380.92313pt>
 File: immagini/DSracommandazione.png Graphic file (type png)
 
 <use immagini/DSracommandazione.png>
@@ -1705,7 +1705,7 @@ Package pdftex.def Info: immagini/DSracommandazione.png used on input line 371.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [35 <./immagini/DSinsertBeh.png>] [36 <./immagini/DSracommandazione.png>]
-[37] [38] <immagini/flux.png, id=600, 408.52625pt x 988.69376pt>
+[37] [38] <immagini/flux.png, id=604, 408.52625pt x 988.69376pt>
 File: immagini/flux.png Graphic file (type png)
 
 <use immagini/flux.png>
@@ -1730,7 +1730,7 @@ Package microtype Info: Loading generic settings for font family
 
 ]
 Capitolo 4.
-<immagini/graficorequisiti.png, id=699, 455.45157pt x 255.95625pt>
+<immagini/graficorequisiti.png, id=703, 455.45157pt x 255.95625pt>
 File: immagini/graficorequisiti.png Graphic file (type png)
 
 <use immagini/graficorequisiti.png>
@@ -1788,10 +1788,10 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24180 strings out of 493085
- 382147 string characters out of 6136916
- 993652 words of memory out of 5000000
- 26617 multiletter control sequences out of 15000+600000
+ 24242 strings out of 493085
+ 383110 string characters out of 6136916
+ 994511 words of memory out of 5000000
+ 26677 multiletter control sequences out of 15000+600000
  37644 words of font info for 162 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,8n,122p,1958b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1816,10 +1816,10 @@ re/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1
 i0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt0800.pfb>
-Output written on tesi.pdf (61 pages, 4929303 bytes).
+Output written on tesi.pdf (61 pages, 4929713 bytes).
 PDF statistics:
- 1155 PDF objects out of 1200 (max. 8388607)
- 985 compressed objects within 10 object streams
- 298 named destinations out of 1000 (max. 500000)
+ 1169 PDF objects out of 1200 (max. 8388607)
+ 998 compressed objects within 10 object streams
+ 300 named destinations out of 1000 (max. 500000)
  41569 words of extra memory for PDF output out of 42996 (max. 10000000)
 
