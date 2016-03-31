@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  31 MAR 2016 00:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  31 MAR 2016 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1816,10 +1816,10 @@ re/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1
 i0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt0800.pfb>
-Output written on tesi.pdf (61 pages, 4929713 bytes).
+Output written on tesi.pdf (61 pages, 4930677 bytes).
 PDF statistics:
- 1169 PDF objects out of 1200 (max. 8388607)
- 998 compressed objects within 10 object streams
+ 1174 PDF objects out of 1200 (max. 8388607)
+ 1002 compressed objects within 11 object streams
  300 named destinations out of 1000 (max. 500000)
  41569 words of extra memory for PDF output out of 42996 (max. 10000000)
 
