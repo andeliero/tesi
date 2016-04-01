@@ -215,6 +215,7 @@ Il \emph{package} \emph{models}, contiene tutta la logica di \emph{business} del
 \begin{itemize}
 \item \textbf{StartupConfiguration:} Questa classe è responsabile di schedulare la generazione dell'albero, per le raccomandazioni. La generazione dell'albero avviene ogni 24 ore, solamente se sono disponibili almeno 100 comportamenti memorizzati.
 \end{itemize}
+\newpage
 \paragraph{Package contenuti}
 \paragraph*{commons}
 Il \emph{package} \emph{commons} contiene le componenti per la rappresentazione interna dei dati. All'interno sono presenti dei convertitori impliciti, che permettono la validazione e la conversione in formato \gls{json}. Funzionalità utili per le componenti nel \emph{controllers}. 
@@ -225,7 +226,7 @@ Il \emph{package} \emph{commons} contiene le componenti per la rappresentazione 
 \label{fig:pack-commons}
 \end{figure}
 \paragraph*{storage}
-Il \emph{package} \emph{storage} è responsabile dell'accesso ai dati. Fornisce una interfaccia per le funzionalità \emph{CRUD}. Il \emph{package} dipende dalle componenti in \emph{commons}, e per ognuna implementa l'interfaccia per l'interazione con OrientDb. Le componenti che gestiscono la persistenza in OrientDb utilizzano le \gls{api} Blueprints\footcite{https://github.com/tinkerpop/blueprints}, perchè OrientDb aderisce a questo standard di default. TinkerPop Blueprints fornisce delle \gls{api} per manipolare \emph{database} a grafo ed è incluso nello \emph{stack} dei progetti di TinkerPop\footcite{http://tinkerpop.incubator.apache.org/}
+Il \emph{package} \emph{storage} è responsabile dell'accesso ai dati. Fornisce una interfaccia per le funzionalità \emph{CRUD}. Il \emph{package} dipende dalle componenti in \emph{commons}, e per ognuna implementa l'interfaccia per l'interazione con OrientDB. Le componenti che gestiscono la persistenza in OrientDB utilizzano le \gls{api} Blueprints\footnote{\url{https://github.com/tinkerpop/blueprints}}, perchè OrientDB aderisce a questo standard di default. TinkerPop Blueprints fornisce delle \gls{api} per manipolare \emph{database} a grafo ed è incluso nello \emph{stack} dei progetti di TinkerPop\footnote{\url{http://tinkerpop.incubator.apache.org/}}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.28]{immagini/storage}
@@ -242,13 +243,13 @@ Il \emph{package} \emph{algorithm}, contiene le componenti \emph{software} che r
 \label{fig:pack-algorithm}
 \end{figure}
 \subsection{Database}
-Rispetto alle esperienze precedenti, come nel mio corso di laurea dove ho utilizzato tecnologie più tradizionali come i \emph{database} relazionali. Questa occasione mi ha permesso di utilizzare un database \emph{\gls{NoSQLg}}, come OrientDb. Questo \emph{database} supporta diversi modelli di persistenza. Per questo progetto ho utilizzato il modello a grafo, che fa riferimento direttamente alla \emph{teoria dei grafi}. In particolare la variante di grafo che OrientDb utilizza è \emph{property graph}. Per la modellazione ho tenuto presente i seguenti concetti:
+Rispetto alle esperienze precedenti, come nel mio corso di laurea dove ho utilizzato tecnologie più tradizionali come i \emph{database} relazionali. Questa occasione mi ha permesso di utilizzare un database \emph{\gls{NoSQLg}}, come OrientDB. Questo \emph{database} supporta diversi modelli di persistenza. Per questo progetto ho utilizzato il modello a grafo, che fa riferimento direttamente alla \emph{teoria dei grafi}. In particolare la variante di grafo che OrientDB utilizza è \emph{property graph}. Per la modellazione ho tenuto presente i seguenti concetti:
 \begin{itemize}
 \item I vertici sono delle entità, mentre gli spigoli rappresentano le relazioni;
 \item Una entità contiene un chiave identificativa e delle proprietà; 
 \item Una relazione può contenere delle proprietà, è espressa tramite una \emph{label} e collega due entità. La direzione della relazione è importante per la semantica della relazione.
 \end{itemize}
-In OrientDb è possibile aggiungere attributi agli spigoli, ma è fortemente sconsigliato per motivi prestazionali\footnote{http://orientdb.com/docs/last/Performance-Tuning-Graph.html}. Per la persistenza dei dati ho scelto una definizione dei dati di tipo \emph{schema-full}, per evitare un controllo dei dati a \emph{run-time} nelle componenti del \emph{package} \emph{storage}.
+In OrientDB è possibile aggiungere attributi agli spigoli, ma è fortemente sconsigliato per motivi prestazionali\footnote{\url{http://orientdb.com/docs/last/Performance-Tuning-Graph.html}}. Per la persistenza dei dati ho scelto una definizione dei dati di tipo \emph{schema-full}, per evitare un controllo dei dati a \emph{run-time} nelle componenti del \emph{package} \emph{storage}.
 \newpage
 \begin{figure}[h]
 \centering
@@ -273,43 +274,44 @@ Le relazioni individuate sono:
 \subsection{Design pattern}
 Qui di seguito elenco i \emph{design pattern} utilizzati per la realizzazione di Tres.
 \subsubsection{\gls{mvc}}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.20]{immagini/mvc}
-\caption{Contesto di utilizzo del \emph{design pattern \gls{mvc}}}
-\label{fig:pattern-mvc}
-\end{figure}
 \begin{itemize}
 \item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} viene utilizzato per separare i compiti delle diverse componenti \emph{software} dell'applicazione. separa \emph{business logic}, \emph{application logic} e viste, rappresentate rispettivamente da \emph{models}, \emph{controller} e \emph{views};
 \item \textbf{Contesto di utilizzo:} questo \emph{pattern} viene implementato nativamente dal \emph{framework} Play. In particolare implementa una tipologia di \emph{\gls{mvc} pull-model}, che permette un salto tecnologico tra la \emph{view} e il \emph{controller}. Questo \emph{pattern} architetturale è importante, perché permette ai programmatori di lavorare sulle componenti di logica applicativa e ai grafici sulle componenti di interfaccia grafica.
 \end{itemize}
-\subsubsection{\gls{dao}}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.20]{immagini/storage}
+\includegraphics[scale=0.30]{immagini/mvc}
+\caption{Contesto di utilizzo del \emph{design pattern \gls{mvc}}}
+\label{fig:pattern-mvc}
+\end{figure}
+\subsubsection{\gls{dao}}
+\begin{itemize}
+\item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} è utilizzato per disaccoppiare la logica di \emph{business} dalla logica di persistenza. Rende così le componenti indipendenti dal sistema di \emph{database};
+\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package storage}, per interagire col \emph{database} OrientDB. L'azienda utilizza diverse tecnologie di persistenza dei dati, quindi per essere facilmente interscambiabile in scenari futuri, è importante l'utilizzo di questo pattern che permette una facile transizione da una tecnologia all'altra.
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{immagini/storage}
 \caption{Contesto di utilizzo del \emph{design pattern \gls{dao}}}
 \label{fig:pattern-dao}
 \end{figure}
-\begin{itemize}
-\item\textbf{Scopo dell'utilizzo:} questo \emph{design pattern} è utilizzato per disaccoppiare la logica di \emph{business} dalla logica di persistenza. Rende così le componenti indipendenti dal sistema di \emph{database};
-\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package storage}, per interagire col \emph{database} OrientDb. L'azienda utilizza diverse tecnologie di persistenza dei dati, quindi per essere facilmente interscambiabile in scenari futuri, è importante l'utilizzo di questo pattern che permette una facile transizione da una tecnologia all'altra.
-\end{itemize}
+\newpage
 \subsubsection{Strategy}
+\begin{itemize}
+\item\textbf{Scopo dell'utilizzo:} il \emph{design pattern strategy} definisce una famiglia di algoritmi, incapsulati e resi intercambiabili. \emph{Strategy} permette agli algoritmi di variare indipendentemente dai \emph{client} che ne fanno uso;
+\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo. Essa viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}. Ho ritenuto importante applicare questo \emph{pattern} nell'ottica di rendere l'algoritmo facilmente interscambiabile, con altri algoritmi di raccomandazione, come ad esempio degli algoritmi basati sulla teoria dei giochi.
+\end{itemize}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.30]{immagini/algorithm}
 \caption{Contesto di utilizzo del \emph{design pattern strategy}}
 \label{fig:pattern-strategy}
 \end{figure}
-\begin{itemize}
-\item\textbf{Scopo dell'utilizzo:} il \emph{design pattern strategy} definisce una famiglia di algoritmi, incapsulati e resi intercambiabili. \emph{Strategy} permette agli algoritmi di variare indipendentemente dai \emph{client} che ne fanno uso;
-\item \textbf{Contesto di utilizzo:} viene utilizzato dalle componenti presenti nel \emph{package algorithm}. E' presente una interfaccia per l'algoritmo. Essa viene implementata da \emph{Id3Service}, che realizza l'algoritmo \emph{ID3}. Ho ritenuto importante applicare questo \emph{pattern} nell'ottica di rendere l'algoritmo facilmente interscambiabile, con altri algoritmi di raccomandazione, come ad esempio degli algoritmi basati sulla teoria dei giochi.
-\end{itemize}
 \newpage
 \subsubsection{Singleton}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.50]{immagini/singleton}
+\includegraphics[scale=0.55]{immagini/singleton}
 \caption{Contesto di utilizzo del \emph{design pattern singleton}}
 \label{fig:pattern-singleton}
 \end{figure}
@@ -380,7 +382,7 @@ Da Bdrim arriva una richiesta \emph{HTTP POST}, che comprende un \gls{json} cont
 
 %**************************************************************
 \newpage
-\section{Verifica e Validazione}%procedere da qui
+\section{Verifica e Validazione}
 Questa sezione descrive l'attività di verifica e validazione svolta durante la realizzazione di Tres. Sono elencati gli strumenti utilizzati, le metriche utilizzate e infine un resoconto finale dei test. L'attività di verifica, mi ha permesso di individuare prontamente errori di codifica e ridurre i tempi di sviluppo. Ho cercato di automatizzare il più possibile questa attività, per focalizzarmi nello sviluppo. In primis, ho effettuato dei test di unità per le componenti più complesse. Successivamente ho verificato la loro integrazione. Per motivi di tempo, non ho potuto realizzare tutti i test di unità e di integrazione. Mi sono, quindi, focalizzato sulle componenti principali. 
 \subsubsection{Strumenti}
 Durante lo sviluppo, ho utilizzato il più possibile degli automatismi. Risparmiando più tempo possibile durante l'analisi statica e dinamica . Ho adottato i seguenti strumenti:

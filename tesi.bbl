@@ -1,0 +1,86 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{site:doc-orientdb}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labeltitlesource}{title}
+      \field{title}{Documentazione OrientDB}
+      \verb{url}
+      \verb http://orientdb.com/docs/2.1/
+      \endverb
+    \endentry
+    \entry{site:doc-playframework}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labeltitlesource}{title}
+      \field{title}{Documentazione Play Framework}
+      \verb{url}
+      \verb https://www.playframework.com/documentation/2.4.x/Home
+      \endverb
+    \endentry
+    \entry{site:scala-lang}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labeltitlesource}{title}
+      \field{title}{Documentazione Scala}
+      \verb{url}
+      \verb http://www.scala-lang.org/
+      \endverb
+    \endentry
+    \entry{site:corso-scala}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labeltitlesource}{title}
+      \field{title}{Functional Programming Principles in Scala}
+      \verb{url}
+      \verb https://class.coursera.org/progfun-005
+      \endverb
+    \endentry
+    \entry{book:scala-in-depth}{book}{}
+      \name{author}{1}{}{%
+        {{hash=be02d9fb93a6a6d31cc79721da11b714}{Joshua\bibnamedelimb D.\bibnamedelimi Suereth}{J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod}{prefazione\bibnamedelimb di\bibnamedelimb Martin\bibnamedelima Odersky}{p\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim O\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Manning}%
+      }
+      \strng{namehash}{be02d9fb93a6a6d31cc79721da11b714}
+      \strng{fullhash}{be02d9fb93a6a6d31cc79721da11b714}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scala in Depth}
+      \field{year}{2012}
+    \endentry
+    \entry{site:corso-orientdb}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labeltitlesource}{title}
+      \field{title}{OrientDB - Getting Started}
+      \verb{url}
+      \verb https://www.udemy.com/orientdb-getting-started/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

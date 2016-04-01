@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  1 APR 2016 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.12.18)  1 APR 2016 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,20 +1132,20 @@ File: biblatex.cfg
 \glo@main@file=\write5
 \openout5 = `tesi.glo'.
 
-Package glossaries Info: Writing glossary file tesi.glo on input line 69.
+Package glossaries Info: Writing glossary file tesi.glo on input line 73.
 \glo@acronym@file=\write6
 \openout6 = `tesi.acn'.
 
-Package glossaries Info: Writing glossary file tesi.acn on input line 69.
-Package hyperref Info: Option `colorlinks' set `true' on input line 114.
-Package hyperref Info: Option `linktocpage' set `true' on input line 114.
-Package hyperref Info: Option `breaklinks' set `true' on input line 114.
-Package hyperref Info: Option `pageanchor' set `true' on input line 114.
-Package hyperref Info: Option `plainpages' set `false' on input line 114.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 114.
+Package glossaries Info: Writing glossary file tesi.acn on input line 73.
+Package hyperref Info: Option `colorlinks' set `true' on input line 118.
+Package hyperref Info: Option `linktocpage' set `true' on input line 118.
+Package hyperref Info: Option `breaklinks' set `true' on input line 118.
+Package hyperref Info: Option `pageanchor' set `true' on input line 118.
+Package hyperref Info: Option `plainpages' set `false' on input line 118.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 118.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 114.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 114.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 118.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1308,11 +1308,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `tesi.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'tesi.bbl' not found.
-
-No file tesi.bbl.
+Package biblatex Info: ... file 'tesi.bbl' found.
+ (./tesi.bbl)
 Package biblatex Info: Reference section=0 on input line 98.
 Package biblatex Info: Reference segment=0 on input line 98.
+
 (./inizio-fine/frontespizio.tex
 <immagini/logo-unipd.png, id=4, 943.525pt x 949.5475pt>
 File: immagini/logo-unipd.png Graphic file (type png)
@@ -1343,29 +1343,28 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ] [4
 
 ])
-(./inizio-fine/indici.tex [5] [6
+(./inizio-fine/ringraziamenti.tex [5] [6
 
-] (./tesi.toc [7
+]) (./inizio-fine/indici.tex [7]
+[8
+
+] (./tesi.toc [9
 
 ])
 \tf@toc=\write7
 \openout7 = `tesi.toc'.
 
- [8] (./tesi.lof)
+ [10] (./tesi.lof)
 \tf@lof=\write8
 \openout8 = `tesi.lof'.
 
 
 Underfull \vbox (badness 4001) has occurred while \output is active []
 
- [9
+ [11
 
 ]
-(./tesi.lot)
-\tf@lot=\write9
-\openout9 = `tesi.lot'.
-
- [10]) (./capitoli/capitolo-1.tex
+[12]) (./capitoli/capitolo-1.tex
 Capitolo 1.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 10.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1380,11 +1379,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 20.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-LaTeX Warning: Citation 'http://www.nextep.it/' on page 1 undefined on input li
-ne 20.
-
-<immagini/logo_nextep.jpg, id=256, 543.9522pt x 158.0304pt>
+<immagini/logo_nextep.jpg, id=265, 543.9522pt x 158.0304pt>
 File: immagini/logo_nextep.jpg Graphic file (type jpg)
 
 <use immagini/logo_nextep.jpg>
@@ -1396,50 +1400,36 @@ Package pdftex.def Info: immagini/logo_nextep.jpg used on input line 23.
 
 
  <./immagini/logo_nextep.jpg>]
-<immagini/amsi.jpg, id=276, 752.8125pt x 564.1075pt>
+<immagini/amsi.jpg, id=285, 752.8125pt x 564.1075pt>
 File: immagini/amsi.jpg Graphic file (type jpg)
  <use immagini/amsi.jpg>
 Package pdftex.def Info: immagini/amsi.jpg used on input line 50.
 (pdftex.def)             Requested size: 263.48831pt x 197.44057pt.
 
-<immagini/tecnologie.png, id=279, 1027.84pt x 770.88pt>
+<immagini/tecnologie.png, id=288, 1027.84pt x 770.88pt>
 File: immagini/tecnologie.png Graphic file (type png)
 
 <use immagini/tecnologie.png>
 Package pdftex.def Info: immagini/tecnologie.png used on input line 60.
 (pdftex.def)             Requested size: 359.74939pt x 269.81204pt.
  [2 <./immagini/amsi.jpg>] [3 <./immagini/tecnologie.png>] [4] <immagini/agileo
-.png, id=307, 451.6875pt x 415.5525pt>
+.png, id=315, 451.6875pt x 415.5525pt>
 File: immagini/agileo.png Graphic file (type png)
 
 <use immagini/agileo.png>
 Package pdftex.def Info: immagini/agileo.png used on input line 89.
 (pdftex.def)             Requested size: 293.59338pt x 270.10593pt.
-
-
-LaTeX Warning: Citation 'http://www.agilemanifesto.org/' on page 5 undefined on
- input line 94.
-
-[5 <./immagini/agileo.png>] <immagini/scrum.png, id=318, 803.0pt x 401.5pt>
+ [5 <./immagini/agileo.png>]
+<immagini/scrum.png, id=327, 803.0pt x 401.5pt>
 File: immagini/scrum.png Graphic file (type png)
-
-<use immagini/scrum.png>
+ <use immagini/scrum.png>
 Package pdftex.def Info: immagini/scrum.png used on input line 120.
 (pdftex.def)             Requested size: 281.05421pt x 140.5271pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
-
-LaTeX Warning: Citation 'https://www.zendesk.it/' on page 7 undefined on input 
-line 135.
-
-
-LaTeX Warning: Citation 'https://www.atlassian.com/software/jira' on page 7 und
-efined on input line 135.
-
-<immagini/jira.png, id=327, 923.45pt x 451.6875pt>
+[6] <immagini/jira.png, id=338, 923.45pt x 451.6875pt>
 File: immagini/jira.png Graphic file (type png)
  <use immagini/jira.png>
 Package pdftex.def Info: immagini/jira.png used on input line 144.
@@ -1448,13 +1438,8 @@ Package pdftex.def Info: immagini/jira.png used on input line 144.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./immagini/scrum.png>]
-
-LaTeX Warning: Citation 'https://git-scm.com/' on page 8 undefined on input lin
-e 159.
-
-[8 <./immagini/jira.png (PNG copy)>]
-<immagini/strumenti.png, id=345, 1027.84pt x 770.88pt>
+[7 <./immagini/scrum.png>] [8 <./immagini/jira.png (PNG copy)>]
+<immagini/strumenti.png, id=358, 1027.84pt x 770.88pt>
 File: immagini/strumenti.png Graphic file (type png)
 
 <use immagini/strumenti.png>
@@ -1469,18 +1454,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[11] <immagini/tree.png, id=360, 942.52126pt x 608.2725pt>
+[11] <immagini/tree.png, id=372, 942.52126pt x 608.2725pt>
 File: immagini/tree.png Graphic file (type png)
 
 <use immagini/tree.png>
 Package pdftex.def Info: immagini/tree.png used on input line 31.
 (pdftex.def)             Requested size: 282.75856pt x 182.48315pt.
  [12 <./immagini/tree.png (PNG copy)>]
-
-LaTeX Warning: Citation 'https://github.com/' on page 13 undefined on input lin
-e 67.
-
-<immagini/travis.png, id=371, 2330.7075pt x 1454.43375pt>
+<immagini/travis.png, id=384, 2330.7075pt x 1454.43375pt>
 File: immagini/travis.png Graphic file (type png)
 
 <use immagini/travis.png>
@@ -1491,28 +1472,15 @@ Overfull \hbox (24.21504pt too wide) in paragraph at lines 70--71
  [][] 
  []
 
-[13]
-
-LaTeX Warning: Citation 'http://astah.net/' on page 14 undefined on input line 
-89.
-
-
-LaTeX Warning: Citation 'http://www.scala-lang.org/' on page 14 undefined on in
-put line 92.
-
-[14 <./immagini/travis.png>]
-<immagini/play-arch.png, id=392, 563.10374pt x 578.16pt>
+[13] [14 <./immagini/travis.png>]
+<immagini/play-arch.png, id=408, 563.10374pt x 578.16pt>
 File: immagini/play-arch.png Graphic file (type png)
 
 <use immagini/play-arch.png>
 Package pdftex.def Info: immagini/play-arch.png used on input line 97.
 (pdftex.def)             Requested size: 281.55118pt x 289.07928pt.
  [15 <./immagini/play-arch.png>]
-
-LaTeX Warning: Citation 'http://orientdb.com/' on page 16 undefined on input li
-ne 112.
-
-<immagini/graph_orientdb.png, id=411, 429.10312pt x 396.7322pt>
+<immagini/graph_orientdb.png, id=427, 429.10312pt x 396.7322pt>
 File: immagini/graph_orientdb.png Graphic file (type png)
 
 <use immagini/graph_orientdb.png>
@@ -1527,7 +1495,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<immagini/gantt.png, id=431, 799.98875pt x 395.4775pt>
+<immagini/gantt.png, id=448, 799.98875pt x 395.4775pt>
 File: immagini/gantt.png Graphic file (type png)
 
 <use immagini/gantt.png>
@@ -1539,14 +1507,14 @@ Overfull \hbox (43.99655pt too wide) in paragraph at lines 20--21
  []
 
 [19 <./immagini/gantt.png (PNG copy)>] [20]
-<immagini/distribuzionereqi.png, id=444, 455.45157pt x 255.95625pt>
+<immagini/distribuzionereqi.png, id=461, 455.45157pt x 255.95625pt>
 File: immagini/distribuzionereqi.png Graphic file (type png)
 
 <use immagini/distribuzionereqi.png>
 Package pdftex.def Info: immagini/distribuzionereqi.png used on input line 71.
 (pdftex.def)             Requested size: 327.92488pt x 184.28835pt.
 
-<immagini/distribuzionereqt.png, id=446, 455.45157pt x 255.95625pt>
+<immagini/distribuzionereqt.png, id=463, 455.45157pt x 255.95625pt>
 File: immagini/distribuzionereqt.png Graphic file (type png)
 
 <use immagini/distribuzionereqt.png>
@@ -1557,214 +1525,187 @@ Package pdftex.def Info: immagini/distribuzionereqt.png used on input line 78.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21 <./immagini/distribuzionereqi.png (PNG copy)>] [22 <./immagini/distribuzion
-ereqt.png (PNG copy)>] <immagini/UC0a.png, id=459, 662.475pt x 521.69907pt>
+ereqt.png (PNG copy)>] <immagini/UC0a.png, id=475, 656.4525pt x 496.10344pt>
 File: immagini/UC0a.png Graphic file (type png)
 
 <use immagini/UC0a.png>
 Package pdftex.def Info: immagini/UC0a.png used on input line 127.
-(pdftex.def)             Requested size: 278.23761pt x 219.1121pt.
+(pdftex.def)             Requested size: 275.70816pt x 208.36201pt.
  [23 <./immagini/UC0a.png>]
-<immagini/UC1a.png, id=468, 708.39656pt x 521.69907pt>
+<immagini/UC1a.png, id=484, 698.61pt x 493.0922pt>
 File: immagini/UC1a.png Graphic file (type png)
  <use immagini/UC1a.png>
 Package pdftex.def Info: immagini/UC1a.png used on input line 142.
-(pdftex.def)             Requested size: 297.52452pt x 219.1121pt.
+(pdftex.def)             Requested size: 293.4142pt x 207.0973pt.
 
 [24 <./immagini/UC1a.png>]
-<immagini/architetturagenerale.png, id=482, 617.30624pt x 581.17125pt>
+<immagini/architetturagenerale.png, id=498, 617.30624pt x 581.17125pt>
 File: immagini/architetturagenerale.png Graphic file (type png)
 
 <use immagini/architetturagenerale.png>
 Package pdftex.def Info: immagini/architetturagenerale.png used on input line 1
 83.
 (pdftex.def)             Requested size: 308.65236pt x 290.58492pt.
- [25 <./immagini/architetturagenerale.png>] <immagini/architetturamvc.png, id=4
-90, 1019.81pt x 809.0225pt>
+ [25 <./immagini/architetturagenerale.png>] <immagini/architetturamvc.png, id=5
+07, 1019.81pt x 809.0225pt>
 File: immagini/architetturamvc.png Graphic file (type png)
 
 <use immagini/architetturamvc.png>
 Package pdftex.def Info: immagini/architetturamvc.png used on input line 193.
 (pdftex.def)             Requested size: 356.93884pt x 283.16212pt.
  [26 <./immagini/architetturamvc.png>]
-<immagini/controllers.png, id=496, 796.9775pt x 329.23pt>
+<immagini/controllers.png, id=513, 796.9775pt x 329.23pt>
 File: immagini/controllers.png Graphic file (type png)
 
 <use immagini/controllers.png>
 Package pdftex.def Info: immagini/controllers.png used on input line 202.
 (pdftex.def)             Requested size: 278.94629pt x 115.23222pt.
 
-<immagini/models.png, id=497, 1106.1325pt x 578.16pt>
+<immagini/models.png, id=514, 1106.1325pt x 578.16pt>
 File: immagini/models.png Graphic file (type png)
 
 <use immagini/models.png>
 Package pdftex.def Info: immagini/models.png used on input line 210.
 (pdftex.def)             Requested size: 331.84232pt x 173.44933pt.
-
-<immagini/commons.png, id=499, 627.34375pt x 574.145pt>
+ [27 <./immagini/controllers.png> <./immagini/models.png>] <immagini/commons.pn
+g, id=525, 627.34375pt x 574.145pt>
 File: immagini/commons.png Graphic file (type png)
 
 <use immagini/commons.png>
-Package pdftex.def Info: immagini/commons.png used on input line 223.
+Package pdftex.def Info: immagini/commons.png used on input line 224.
 (pdftex.def)             Requested size: 175.65504pt x 160.7595pt.
- [27 <./immagini/controllers.png> <./immagini/models.png>]
 
-LaTeX Warning: Citation 'https://github.com/tinkerpop/blueprints' on page 28 un
-defined on input line 228.
-
-
-LaTeX Warning: Citation 'http://tinkerpop.incubator.apache.org/' on page 28 und
-efined on input line 228.
-
-<immagini/storage.png, id=515, 812.03375pt x 603.25375pt>
+<immagini/storage.png, id=532, 812.03375pt x 603.25375pt>
 File: immagini/storage.png Graphic file (type png)
 
 <use immagini/storage.png>
-Package pdftex.def Info: immagini/storage.png used on input line 231.
+Package pdftex.def Info: immagini/storage.png used on input line 232.
 (pdftex.def)             Requested size: 227.36789pt x 168.9099pt.
  [28 <./immagini/commons.png> <./immagini/storage.png>] <immagini/algorithm.png
-, id=526, 876.27374pt x 559.08875pt>
+, id=544, 876.27374pt x 559.08875pt>
 File: immagini/algorithm.png Graphic file (type png)
 
 <use immagini/algorithm.png>
-Package pdftex.def Info: immagini/algorithm.png used on input line 240.
+Package pdftex.def Info: immagini/algorithm.png used on input line 241.
 (pdftex.def)             Requested size: 262.88414pt x 167.7279pt.
  [29 <./immagini/algorithm.png>]
-<immagini/databaseschema.png, id=537, 781.92125pt x 139.52126pt>
+<immagini/databaseschema.png, id=556, 781.92125pt x 139.52126pt>
 File: immagini/databaseschema.png Graphic file (type png)
 
 <use immagini/databaseschema.png>
-Package pdftex.def Info: immagini/databaseschema.png used on input line 255.
+Package pdftex.def Info: immagini/databaseschema.png used on input line 256.
 (pdftex.def)             Requested size: 390.95967pt x 69.76045pt.
 
-Overfull \hbox (18.95967pt too wide) in paragraph at lines 255--256
+Overfull \hbox (18.95967pt too wide) in paragraph at lines 256--257
  [][] 
  []
 
 [30 <./immagini/databaseschema.png>]
-<immagini/mvc.png, id=544, 980.66376pt x 655.44875pt>
+<immagini/mvc.png, id=564, 980.66376pt x 655.44875pt>
 File: immagini/mvc.png Graphic file (type png)
  <use immagini/mvc.png>
-Package pdftex.def Info: immagini/mvc.png used on input line 278.
-(pdftex.def)             Requested size: 196.12927pt x 131.08742pt.
+Package pdftex.def Info: immagini/mvc.png used on input line 283.
+(pdftex.def)             Requested size: 294.2014pt x 196.63614pt.
 File: immagini/storage.png Graphic file (type png)
 
 <use immagini/storage.png>
-Package pdftex.def Info: immagini/storage.png used on input line 289.
-(pdftex.def)             Requested size: 162.40387pt x 120.6486pt.
- [31 <./immagini/mvc.png>]
-File: immagini/algorithm.png Graphic file (type png)
+Package pdftex.def Info: immagini/storage.png used on input line 294.
+(pdftex.def)             Requested size: 243.612pt x 180.97751pt.
 
-<use immagini/algorithm.png>
-Package pdftex.def Info: immagini/algorithm.png used on input line 300.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31 <./immagini/mvc.png>]
+File: immagini/algorithm.png Graphic file (type png)
+ <use immagini/algorithm.png>
+Package pdftex.def Info: immagini/algorithm.png used on input line 306.
 (pdftex.def)             Requested size: 262.88414pt x 167.7279pt.
  [32]
-<immagini/singleton.png, id=563, 412.54124pt x 280.79906pt>
+<immagini/singleton.png, id=584, 398.23781pt x 248.42813pt>
 File: immagini/singleton.png Graphic file (type png)
 
 <use immagini/singleton.png>
-Package pdftex.def Info: immagini/singleton.png used on input line 312.
-(pdftex.def)             Requested size: 206.27011pt x 140.39919pt.
+Package pdftex.def Info: immagini/singleton.png used on input line 314.
+(pdftex.def)             Requested size: 219.03146pt x 136.63588pt.
  [33 <./immagini/singleton.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 335
+Underfull \vbox (badness 10000) detected at line 337
  []
 
-<immagini/DScheckstate.png, id=573, 548.0475pt x 380.92313pt>
+<immagini/DScheckstate.png, id=592, 546.54187pt x 354.57469pt>
 File: immagini/DScheckstate.png Graphic file (type png)
 
 <use immagini/DScheckstate.png>
-Package pdftex.def Info: immagini/DScheckstate.png used on input line 338.
-(pdftex.def)             Requested size: 235.65582pt x 163.79375pt.
+Package pdftex.def Info: immagini/DScheckstate.png used on input line 340.
+(pdftex.def)             Requested size: 235.00842pt x 152.46414pt.
  [34 <./immagini/DScheckstate.png>]
-Underfull \vbox (badness 10000) detected at line 351
+Underfull \vbox (badness 10000) detected at line 353
  []
 
-<immagini/DSinsertBeh.png, id=582, 523.9575pt x 380.92313pt>
+<immagini/DSinsertBeh.png, id=601, 523.9575pt x 358.33875pt>
 File: immagini/DSinsertBeh.png Graphic file (type png)
 
 <use immagini/DSinsertBeh.png>
-Package pdftex.def Info: immagini/DSinsertBeh.png used on input line 354.
-(pdftex.def)             Requested size: 220.06065pt x 159.98662pt.
+Package pdftex.def Info: immagini/DSinsertBeh.png used on input line 356.
+(pdftex.def)             Requested size: 220.06065pt x 150.50125pt.
 
-Underfull \vbox (badness 10000) detected at line 368
+Underfull \vbox (badness 10000) detected at line 370
  []
 
-<immagini/DSracommandazione.png, id=585, 612.78937pt x 380.92313pt>
+<immagini/DSracommandazione.png, id=604, 609.77812pt x 356.0803pt>
 File: immagini/DSracommandazione.png Graphic file (type png)
 
 <use immagini/DSracommandazione.png>
-Package pdftex.def Info: immagini/DSracommandazione.png used on input line 371.
+Package pdftex.def Info: immagini/DSracommandazione.png used on input line 373.
 
-(pdftex.def)             Requested size: 257.36978pt x 159.98662pt.
+(pdftex.def)             Requested size: 256.10506pt x 149.5527pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [35 <./immagini/DSinsertBeh.png>] [36 <./immagini/DSracommandazione.png>]
-[37] [38] <immagini/flux.png, id=614, 408.52625pt x 988.69376pt>
+[37] [38] <immagini/flux.png, id=634, 408.52625pt x 988.69376pt>
 File: immagini/flux.png Graphic file (type png)
 
 <use immagini/flux.png>
-Package pdftex.def Info: immagini/flux.png used on input line 462.
+Package pdftex.def Info: immagini/flux.png used on input line 464.
 (pdftex.def)             Requested size: 171.57985pt x 415.24855pt.
  [39 <./immagini/flux.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 472.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [40])
-(./capitoli/capitolo-4.tex [41] [42
+[40]) (./capitoli/capitolo-4.tex [41] [42
 
 ]
 Capitolo 4.
-<immagini/graficorequisiti.png, id=715, 455.45157pt x 255.95625pt>
+<immagini/graficorequisiti.png, id=733, 455.45157pt x 255.95625pt>
 File: immagini/graficorequisiti.png Graphic file (type png)
 
 <use immagini/graficorequisiti.png>
 Package pdftex.def Info: immagini/graficorequisiti.png used on input line 22.
 (pdftex.def)             Requested size: 291.488pt x 163.81143pt.
- [43 <./immagini/graficorequisiti.png (PNG copy)>] [44]
-
-LaTeX Warning: Citation 'https://www.coursera.org/course/progfun' on page 45 un
-defined on input line 43.
-
-
-LaTeX Warning: Citation 'http://lampwww.epfl.ch/~odersky/' on page 45 undefined
- on input line 43.
-
-
-LaTeX Warning: Citation 'https://www.udemy.com/orientdb-getting-started/' on pa
-ge 45 undefined on input line 46.
-
-[45]) [46] (./tesi.gls [47
+ [43 <./immagini/graficorequisiti.png (PNG copy)>] [44] [45]) [46] (./tesi.gls 
+[47
 
 
 
-]) (./tesi.acr [48]) (./inizio-fine/bibliografia.tex
-[49
+]) (./tesi.acr [48])
+(./inizio-fine/bibliografia.tex [49
 
 
 ] [50
 
 ]
-
-LaTeX Warning: Empty bibliography on input line 16.
-
-
-LaTeX Warning: Empty bibliography on input line 16.
+Overfull \hbox (25.67093pt too wide) in paragraph at lines 17--17
+[][]\T1/cmr/m/it/10 (-20) Documentazione Play Fra-mework\T1/cmr/m/n/10 (-20) . 
+\T1/cmr/m/sc/10 (-20) url\T1/cmr/m/n/10 (-20) : [][]$\T1/cmtt/m/n/10 https : / 
+/ www . playframework . com / documentation /
+ []
 
 ) [51
 
@@ -1776,50 +1717,44 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 128.
 
 
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                tesi
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24366 strings out of 493085
- 385129 string characters out of 6136916
- 996191 words of memory out of 5000000
- 26797 multiletter control sequences out of 15000+600000
- 37644 words of font info for 162 fonts, out of 8000000 for 9000
+ 24400 strings out of 493085
+ 385872 string characters out of 6136916
+ 996001 words of memory out of 5000000
+ 26822 multiletter control sequences out of 15000+600000
+ 37181 words of font info for 162 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  61i,8n,122p,1958b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-si1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
-i0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sftt0800.pfb>
-Output written on tesi.pdf (61 pages, 4932149 bytes).
+type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+sl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+i1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (63 pages, 4903523 bytes).
 PDF statistics:
- 1205 PDF objects out of 1440 (max. 8388607)
- 1030 compressed objects within 11 object streams
- 304 named destinations out of 1000 (max. 500000)
+ 1240 PDF objects out of 1440 (max. 8388607)
+ 1064 compressed objects within 11 object streams
+ 312 named destinations out of 1000 (max. 500000)
  41569 words of extra memory for PDF output out of 42996 (max. 10000000)
 

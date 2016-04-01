@@ -32,19 +32,19 @@ Il progetto di stage consiste nella realizzazione di un sistema di raccomandazio
 \caption{Esempio di un albero decisionale}
 \end{figure}
 \subsection{Obiettivi}
-Prima dell'inizio dello stage, Nextep ha redatto un \emph{Piano di Lavoro} contenente gli obiettivi da realizzare, nelle settimane di \emph{stage}. Essi erano suddivisi in minimi e massimi. Successivamente in seguito ad una variazione delle priorità aziendali, sono stati effettuati dei cambiamenti. Inizialmente, ho effettuato il \emph{\gls{portingg}} del modulo preesistente DRE, in modo che la persistenza fosse compatibile con OrientDb e con l'ultima versione di Play Framework. Visto il protrarsi delle attività di \emph{\gls{portingg}}, l'azienda ha deciso di sospendere il lavoro, per poter sviluppare il nuovo modulo di raccomandazione.
+Prima dell'inizio dello stage, Nextep ha redatto un \emph{Piano di Lavoro} contenente gli obiettivi da realizzare, nelle settimane di \emph{stage}. Essi erano suddivisi in minimi e massimi. Successivamente in seguito ad una variazione delle priorità aziendali, sono stati effettuati dei cambiamenti. Inizialmente, ho effettuato il \emph{\gls{portingg}} del modulo preesistente DRE, in modo che la persistenza fosse compatibile con OrientDB e con l'ultima versione di Play Framework. Visto il protrarsi delle attività di \emph{\gls{portingg}}, l'azienda ha deciso di sospendere il lavoro, per poter sviluppare il nuovo modulo di raccomandazione.
 \newpage
 Qui di seguito presento gli obiettivi dello stage:
 \begin{itemize}
 \item Obiettivi formativi
 \begin{itemize}
 \item Formazione sui sistemi di raccomandazione e degli algoritmi di apprendimento;
-\item Studio delle tecnologie utilizzate, Scala e OrientDb;
+\item Studio delle tecnologie utilizzate, Scala e OrientDB;
 \item Studio degli strumenti utilizzati, in particolar modo dei \gls{framework} e degli \gls{ide}.
 \end{itemize}
 \item Obiettivi minimi
 \begin{itemize}
-\item Utilizzo del database OrientDb.
+\item Utilizzo del database OrientDB.
 \end{itemize}
 \item Obiettivi massimi
 \begin{itemize}
@@ -64,7 +64,7 @@ Questa sezione elenca i vincoli relativi al progetto di \emph{stage}.
 \subsection{Vincoli temporali}
 Per lo \emph{stage} i vincoli temporali sono imposti direttamente dall'università. Essa stabilisce una durata minima di 300 ore e una durata massima di 320 ore. Per questo motivo, ho modulato il \emph{Piano di Lavoro} in modo da distribuire le ore lavorative in 8 settimane. Con l'azienda ho concordato un impegno di 300 ore, divise in 37.5 ore settimanali. Le variazioni del piano sono state concordate con il \emph{tutor} aziendale, in maniera da rispettare i vincoli temporali, imposti in seguito a ritardi dovuti al \emph{porting} del modulo DRE.
 \subsection{Vincoli metodologici}
-Come strumento di versionamento, ho scelto Git, già utilizzato in precedenza e per il supporto che riceve da molti strumenti di sviluppo. Per la documentazione del codice ho scelto Scaladoc, fornito insieme al compilatore. Similmente a Javadoc permette di documentare direttamente nel codice sorgente. Per il \emph{testing} nel progetto ho utilizzato TravisCI, esso fornisce un servizio di \emph{continuous integration}, facilmente integrabile con i \emph{repository} di Github\footcite{https://github.com/}.
+Come strumento di versionamento, ho scelto Git, già utilizzato in precedenza e per il supporto che riceve da molti strumenti di sviluppo. Per la documentazione del codice ho scelto Scaladoc, fornito insieme al compilatore. Similmente a Javadoc permette di documentare direttamente nel codice sorgente. Per il \emph{testing} nel progetto ho utilizzato TravisCI, esso fornisce un servizio di \emph{continuous integration}, facilmente integrabile con i \emph{repository} di Github\footnote{\url{https://github.com/}}.
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.17,keepaspectratio]{travis}
@@ -86,10 +86,10 @@ Per la gestione progetti ho utilizzato il \emph{build tool} Sbt. Nell' ambiente 
 \item Supporto per i maggiori \emph{tool} di \emph{testing};
 \item Supporto per la gestione delle librerie.
 \end{itemize}
-Per la realizzazione dei diagrammi \emph{UML} ho utilizzato Astah Professional\footcite{http://astah.net/}, uno strumento già utilizzato in precedenza e compatibile con gli ultimi standard \emph{UML 2.0}.
+Per la realizzazione dei diagrammi \emph{UML} ho utilizzato Astah Professional\footnote{\url{http://astah.net/}}, uno strumento già utilizzato in precedenza e compatibile con gli ultimi standard \emph{UML 2.0}.
 \subsection{Vincoli tecnologici}
 \subsubsection{Scala}
-Il principale linguaggio di programmazione adottato è Scala\footcite{http://www.scala-lang.org/} (acronimo di \emph{"Scalable Language"}). E' stato studiato per poter interoperare con \emph{JRE}. E' possibile quindi scrivere applicazioni sia in Java e Scala, che eseguono nella stessa \emph{\gls{jvm}}. E' un linguaggio multi paradigma, che integra concetti provenienti dai linguaggi della programmazione ad oggetti e della programmazione funzionale. Scala è un linguaggio completamente \emph{object oriented}, infatti ogni elemento del linguaggio è un oggetto, compresi i tipi primitivi e le funzioni. Inoltre è un linguaggio funzionale, include funzioni di prima classe e una libreria con strutture dati immutabili efficienti.
+Il principale linguaggio di programmazione adottato è Scala\footnote{\url{http://www.scala-lang.org/}} (acronimo di \emph{"Scalable Language"}). E' stato studiato per poter interoperare con \emph{JRE}. E' possibile quindi scrivere applicazioni sia in Java e Scala, che eseguono nella stessa \emph{\gls{jvm}}. E' un linguaggio multi paradigma, che integra concetti provenienti dai linguaggi della programmazione ad oggetti e della programmazione funzionale. Scala è un linguaggio completamente \emph{object oriented}, infatti ogni elemento del linguaggio è un oggetto, compresi i tipi primitivi e le funzioni. Inoltre è un linguaggio funzionale, include funzioni di prima classe e una libreria con strutture dati immutabili efficienti.
 \subsubsection{Play Framework}
 Play è un \gls{framework} \emph{open source}, scritto in Java e Scala. Permette l'implementazione di \emph{web application} con il \emph{pattern} \gls{mvc}. Questo \gls{framework} trae ispirazione ed è simile a Ruby on Rails e Django.
 \begin{figure}[ht]
@@ -109,13 +109,13 @@ Le peculiarità che lo contraddistinguono dagli altri \gls{framework}, sono le s
 \end{itemize}
 Al suo interno permette una implementazione delle \emph{views}, specificando l'interfaccia con un linguaggio di \emph{markup} (e.g. Html, Xml, \gls{json}) in combinazione con del codice Scala. Vengono fornite molte classi di \emph{utility}, come ad esempio \emph{Play Json Library} che permette di operare con dei dati in formato \gls{json}. Fornisce inoltre, un adattamento della libreria Specs2, che permette un supporto per il \emph{testing} di una applicazione in Play. Una tipica applicazione in Play, funziona convogliando tutte le \emph{HTTP Request} nella componente \emph{Router} che invocherà a sua volta, il \emph{Controller} pre-selezionato. Il \emph{Controller} interagisce con il \emph{Model} che a sua volta restituisce un risultato. In genere, questo risultato, verrà poi \emph{renderizzato} con la \emph{View} e fatto ritornare tramite un \emph{HTTP Response}.
 \subsubsection{OrientDB}
-Per la persistenza dei dati ho utilizzato OrientDb\footcite{http://orientdb.com/}. Un \emph{DBMS} multi-modello con una licenza \emph{open source}. Supporta i seguenti modelli di persistenza:
+Per la persistenza dei dati ho utilizzato OrientDB\footnote{\url{http://orientdb.com/}}. Un \emph{DBMS} multi-modello con una licenza \emph{open source}. Supporta i seguenti modelli di persistenza:
 \begin{itemize}
 \item \emph{Graph}: modello a grafo; 
-\item \emph{Document}: modello a documenti come MongoDb;
+\item \emph{Document}: modello a documenti come MongoDB;
 \item \emph{Object}: modello ad oggetti, che consente di memorizzare direttamente i \emph{POJO}.
 \end{itemize}
-Inoltre supporta modelli di definizione dello schema quali \emph{schema-less}, \emph{schema-full} e \emph{schema-mixed}. Per motivi prestazionali non permette le \emph{join}. Le relazioni sono gestite come in un database a grafo, ovvero delle connessioni dirette tra i \emph{record}. Questa caratteristica lo rende adatto nel contesto dei \emph{Big Data}. La complessità computazionale per gestire una creazione di un \emph{link} è pari a O(1). Tra le caratteristiche più importanti di OrientDb:
+Inoltre supporta modelli di definizione dello schema quali \emph{schema-less}, \emph{schema-full} e \emph{schema-mixed}. Per motivi prestazionali non permette le \emph{join}. Le relazioni sono gestite come in un database a grafo, ovvero delle connessioni dirette tra i \emph{record}. Questa caratteristica lo rende adatto nel contesto dei \emph{Big Data}. La complessità computazionale per gestire una creazione di un \emph{link} è pari a O(1). Tra le caratteristiche più importanti di OrientDB:
 \begin{itemize}
 \item Scalabile: ovvero è possibile aggiungere al sistema un altro \emph{server}, per aumentarne le prestazioni;
 \item Transazionale: supporta transazioni completamente \emph{ACID}, garantendo che tutte vengano processate in modo affidabile. Nel caso di \emph{crash} viene ripristinato lo stato precedente (rollback);
@@ -124,7 +124,7 @@ Inoltre supporta modelli di definizione dello schema quali \emph{schema-less}, \
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.60]{immagini/graph_orientdb}
-\caption{Esempio di modellazione in OrientDb. Immagine tratta da \href{http://blog.scalac.io/2015/11/26/orientdb-and-scala-part1.html}{Scalac Blog}}
+\caption{Esempio di modellazione in OrientDB. Immagine tratta da \href{http://blog.scalac.io/2015/11/26/orientdb-and-scala-part1.html}{Scalac Blog}}
 \label{fig:orientdb-graph}
 \end{figure}
 %**************************************************************************************************

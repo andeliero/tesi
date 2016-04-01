@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Tipica architettura di un'applicazione che utilizza Play Framework. Immagine tratta da \href {https://110j.wordpress.com/2013/10/23/play-framework-2-1-architecture/}{Omer Haderi Blog}.\relax }}{15}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Esempio di modellazione in OrientDb. Immagine tratta da \href {http://blog.scalac.io/2015/11/26/orientdb-and-scala-part1.html}{Scalac Blog}\relax }}{17}{figure.caption.27}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Esempio di modellazione in OrientDB. Immagine tratta da \href {http://blog.scalac.io/2015/11/26/orientdb-and-scala-part1.html}{Scalac Blog}\relax }}{17}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -60,7 +60,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Contesto di utilizzo del \emph {design pattern \gls {mvc}}\relax }}{31}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Contesto di utilizzo del \emph {design pattern \gls {dao}}\relax }}{31}{figure.caption.53}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Contesto di utilizzo del \emph {design pattern \gls {dao}}\relax }}{32}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Contesto di utilizzo del \emph {design pattern strategy}\relax }}{32}{figure.caption.55}
 \defcounter {refsection}{0}\relax 

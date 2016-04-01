@@ -92,7 +92,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Classi contenute}{27}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Package contenuti}{27}{section*.42}
+\contentsline {paragraph}{Package contenuti}{28}{section*.42}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Database}{29}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
@@ -142,7 +142,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Scala}{45}{section*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{OrientDb}{45}{section*.69}
+\contentsline {subsubsection}{OrientDB}{45}{section*.69}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Play Framework}{45}{section*.70}
 \defcounter {refsection}{0}\relax 
