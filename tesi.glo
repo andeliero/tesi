@@ -2,6 +2,8 @@
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{12}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{14}
@@ -9,15 +11,25 @@
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{nosql?\glossentry{NoSQLg}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{45}
 \glossaryentry{core business?\glossentry{core business}|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{framework?\glossentry{framework}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{nosql?\glossentry{NoSQLg}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{porting?\glossentry{portingg}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{api?\glossentry{apig}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{content management system?\glossentry{cmsg}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{data access object?\glossentry{daog}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{ict?\glossentry{ictg}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{Integrated Development Environment?\glossentry{ideg}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{json?\glossentry{jsong}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{jvm?\glossentry{jvmg}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{model view controller?\glossentry{mvcg}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{rest?\glossentry{restg}|setentrycounter[]{page}\glsnumberformat}{49}
 \glossaryentry{uml?\glossentry{umlg}|setentrycounter[]{page}\glsnumberformat}{49}

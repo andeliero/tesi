@@ -8,11 +8,11 @@
 \glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}\glsnumberformat}{8}
 \glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{JVM?\glossentry{jvm}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{JSON?\glossentry{json}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{JSON?\glossentry{json}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{API?\glossentry{api}|setentrycounter[]{page}\glsnumberformat}{17}
-\glossaryentry{REST?\glossentry{rest}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{API?\glossentry{api}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{UML?\glossentry{uml}|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{API?\glossentry{api}|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{API?\glossentry{api}|setentrycounter[]{page}\glsnumberformat}{23}
@@ -53,6 +53,7 @@
 \glossaryentry{ICT?\glossentry{ict}|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{JSON?\glossentry{json}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{JVM?\glossentry{jvm}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{MVC?\glossentry{mvc}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{REST?\glossentry{rest}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{UML?\glossentry{uml}|setentrycounter[]{page}\glsnumberformat}{48}

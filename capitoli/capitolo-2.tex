@@ -32,7 +32,7 @@ Il progetto di stage consiste nella realizzazione di un sistema di raccomandazio
 \caption{Esempio di un albero decisionale}
 \end{figure}
 \subsection{Obiettivi}
-Prima dell'inizio dello stage, Nextep ha redatto un \emph{Piano di Lavoro} contenente gli obiettivi da realizzare, nelle settimane di \emph{stage}. Essi erano suddivisi in minimi e massimi. Successivamente in seguito ad una variazione delle priorità aziendali, sono stati effettuati dei cambiamenti. Inizialmente, ho effettuato il \emph{porting} del modulo preesistente DRE, in modo che la persistenza fosse compatibile con OrientDb e con l'ultima versione di Play Framework. Visto il protrarsi delle attività di \emph{porting}, l'azienda ha deciso di sospendere il lavoro, per poter sviluppare il nuovo modulo di raccomandazione.
+Prima dell'inizio dello stage, Nextep ha redatto un \emph{Piano di Lavoro} contenente gli obiettivi da realizzare, nelle settimane di \emph{stage}. Essi erano suddivisi in minimi e massimi. Successivamente in seguito ad una variazione delle priorità aziendali, sono stati effettuati dei cambiamenti. Inizialmente, ho effettuato il \emph{\gls{portingg}} del modulo preesistente DRE, in modo che la persistenza fosse compatibile con OrientDb e con l'ultima versione di Play Framework. Visto il protrarsi delle attività di \emph{\gls{portingg}}, l'azienda ha deciso di sospendere il lavoro, per poter sviluppare il nuovo modulo di raccomandazione.
 \newpage
 Qui di seguito presento gli obiettivi dello stage:
 \begin{itemize}
@@ -89,7 +89,7 @@ Per la gestione progetti ho utilizzato il \emph{build tool} Sbt. Nell' ambiente 
 Per la realizzazione dei diagrammi \emph{UML} ho utilizzato Astah Professional\footcite{http://astah.net/}, uno strumento già utilizzato in precedenza e compatibile con gli ultimi standard \emph{UML 2.0}.
 \subsection{Vincoli tecnologici}
 \subsubsection{Scala}
-Il principale linguaggio di programmazione adottato è Scala\footcite{http://www.scala-lang.org/} (acronimo di \emph{"Scalable Language"}). E' stato studiato per poter interoperare con \emph{JRE}. E' possibile quindi scrivere applicazioni sia in Java e Scala, che eseguono nella stessa \emph{JVM}. E' un linguaggio multi paradigma, che integra concetti provenienti dai linguaggi della programmazione ad oggetti e della programmazione funzionale. Scala è un linguaggio completamente \emph{object oriented}, infatti ogni elemento del linguaggio è un oggetto, compresi i tipi primitivi e le funzioni. Inoltre è un linguaggio funzionale, include funzioni di prima classe e una libreria con strutture dati immutabili efficienti.
+Il principale linguaggio di programmazione adottato è Scala\footcite{http://www.scala-lang.org/} (acronimo di \emph{"Scalable Language"}). E' stato studiato per poter interoperare con \emph{JRE}. E' possibile quindi scrivere applicazioni sia in Java e Scala, che eseguono nella stessa \emph{\gls{jvm}}. E' un linguaggio multi paradigma, che integra concetti provenienti dai linguaggi della programmazione ad oggetti e della programmazione funzionale. Scala è un linguaggio completamente \emph{object oriented}, infatti ogni elemento del linguaggio è un oggetto, compresi i tipi primitivi e le funzioni. Inoltre è un linguaggio funzionale, include funzioni di prima classe e una libreria con strutture dati immutabili efficienti.
 \subsubsection{Play Framework}
 Play è un \gls{framework} \emph{open source}, scritto in Java e Scala. Permette l'implementazione di \emph{web application} con il \emph{pattern} \gls{mvc}. Questo \gls{framework} trae ispirazione ed è simile a Ruby on Rails e Django.
 \begin{figure}[ht]
@@ -119,7 +119,7 @@ Inoltre supporta modelli di definizione dello schema quali \emph{schema-less}, \
 \begin{itemize}
 \item Scalabile: ovvero è possibile aggiungere al sistema un altro \emph{server}, per aumentarne le prestazioni;
 \item Transazionale: supporta transazioni completamente \emph{ACID}, garantendo che tutte vengano processate in modo affidabile. Nel caso di \emph{crash} viene ripristinato lo stato precedente (rollback);
-\item Poliglotta: supporta \emph{query} in un dialetto \emph{SQL-like}, oppure delle \emph{\gls{api} \gls{rest}} che forniscono l'accesso ai dati.
+\item Poliglotta: supporta \emph{query} in un dialetto \emph{SQL-like}, oppure delle \emph{\gls{api} REST} che forniscono l'accesso ai dati.
 \end{itemize}
 \begin{figure}[ht]
 \centering
